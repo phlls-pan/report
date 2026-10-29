@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>计算机相关 · 40 岁岗位调研 · 公开版 · 2026</title>
+<style>
+:root{
+  --paper:#eef1ec;--card:#fffdf6;--ink:#17211f;--muted:#68736d;--line:#d6ddd5;
+  --navy:#12323f;--navy-2:#1e5364;--teal:#2a7f86;--amber:#c58a2d;--terra:#bf5638;--sand:#e3e8df;
+  --shadow:0 10px 30px rgba(18,50,63,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3,.serif{font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",serif}
+a{color:var(--navy-2)}
+.hero{background:var(--navy);color:#f4f1e6;padding:76px 24px 58px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),
+  radial-gradient(900px 420px at 78% 0%,rgba(197,138,45,.24),transparent 60%),
+  radial-gradient(700px 500px at 0% 100%,rgba(42,127,134,.20),transparent 60%);
+  background-size:42px 42px,42px 42px,auto,auto;pointer-events:none}
+.hero-inner{max-width:1120px;margin:0 auto;position:relative}
+.kicker{letter-spacing:.18em;font-size:11.5px;text-transform:uppercase;color:#b9d2d5}
+.hero h1{font-size:clamp(38px,6vw,72px);line-height:1.08;margin:18px 0 18px;font-weight:700;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:#e8b96b}
+.lede{font-size:clamp(15px,1.8vw,18px);max-width:900px;color:#dce7e4;margin:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 13px;font-size:12.5px;color:#e8efec;white-space:nowrap}
+.chip.hot{border-color:#e8b96b;color:#ffe0a3}
+.stamp{position:absolute;right:24px;top:26px;border:2px solid rgba(232,185,107,.7);color:#e8b96b;padding:9px 13px;border-radius:8px;transform:rotate(6deg);font-size:11px;letter-spacing:.16em;font-weight:800;opacity:.92;line-height:1.5;text-align:center}
+@media(max-width:640px){.stamp{display:none}}
+.toc{position:sticky;top:0;z-index:30;background:rgba(238,241,236,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.toc-inner{max-width:1120px;margin:0 auto;display:flex;gap:18px;overflow-x:auto;padding:12px 24px;font-size:13px;scrollbar-width:none}
+.toc-inner::-webkit-scrollbar{display:none}
+.toc a{color:var(--muted);text-decoration:none;white-space:nowrap;padding:2px 0;border-bottom:1px solid transparent}
+.toc a:hover{color:var(--navy);border-bottom-color:var(--navy)}
+.print-btn{margin-left:auto;border:1px solid var(--navy);background:transparent;color:var(--navy);border-radius:999px;padding:7px 14px;font-size:12px;cursor:pointer;white-space:nowrap}
+.print-btn:hover{background:var(--navy);color:#fff}
+main{max-width:1120px;margin:0 auto;padding:0 24px 80px}
+section{padding:62px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+.section-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+.section-num{font-size:clamp(28px,4vw,46px);color:var(--terra);font-family:"Songti SC","Noto Serif SC",serif;line-height:1}
+h2{font-size:clamp(26px,3.4vw,40px);line-height:1.2;margin:0;letter-spacing:-.01em}
+h3{line-height:1.35}
+.sub{color:var(--muted);max-width:900px;margin:10px 0 28px;font-size:15px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px;font-size:20px;line-height:1.35}
+.card p{margin:8px 0;font-size:14px;color:#3a3a35}
+.card .small{font-size:12.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;margin-bottom:10px}
+.tag-green{background:#d8e9df;color:#174b37}
+.tag-terra{background:#f6ddd2;color:#8a3b1f}
+.tag-amber{background:#f4e8c8;color:#6b4d16}
+.tag-blue{background:#d8e6ea;color:#174653}
+.tag-gray{background:#eceae3;color:#5d5a52}
+.callout{background:#e9eee8;border-left:4px solid var(--navy-2);padding:18px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px}
+.callout.warn{border-left-color:var(--terra);background:#f7eae4}
+.callout.amber{border-left-color:var(--amber);background:#f7f0dc}
+.callout strong{color:var(--navy)}
+.callout.warn strong{color:#8a3b1f}
+.callout.amber strong{color:#6b4d16}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0 4px}
+@media(max-width:760px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.kpi .num{font-family:"Songti SC","Noto Serif SC",serif;font-size:30px;line-height:1.1;color:var(--navy);font-weight:700}
+.kpi .lbl{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:12.5px}
+thead th{position:sticky;top:0;background:var(--navy);color:#f6f1e5;padding:10px 8px;text-align:center;font-weight:600;white-space:nowrap;z-index:3}
+tbody td{padding:9px 8px;border-bottom:1px solid #eee7d9;text-align:center;vertical-align:middle}
+tbody tr:hover{background:#faf6ec}
+td.name{text-align:left;font-weight:600;min-width:190px;position:sticky;left:0;background:var(--card);z-index:2}
+tbody tr:hover td.name{background:#faf6ec}
+.row-note{display:block;font-weight:400;font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;max-width:250px;white-space:normal}
+.group td{background:var(--sand);font-weight:800;color:var(--navy);text-align:left;padding:10px 12px;font-size:13px;letter-spacing:.04em;position:static}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:11.5px;color:var(--muted);margin-top:10px}
+.legend b{color:var(--ink)}
+.compare{width:100%;min-width:860px;font-size:12.8px;border-collapse:collapse}
+.compare th{background:var(--navy);color:#f6f1e5;padding:10px 9px;text-align:left;font-weight:600;position:static}
+.compare td{padding:10px 9px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.compare tr:nth-child(even) td{background:#faf6ec}
+.compare td:first-child{font-weight:700;white-space:nowrap;color:var(--navy)}
+.hm{width:100%;min-width:820px;font-size:12.5px}
+.hm th{background:var(--navy);color:#f6f1e5;padding:10px 7px;text-align:center;font-weight:600;white-space:nowrap}
+.hm td{padding:10px 7px;border-bottom:1px solid #eee7d9;text-align:center;vertical-align:middle}
+.hm td:first-child{text-align:left;font-weight:700;white-space:nowrap}
+.good{background:#d8e9df;color:#174b37;font-weight:800}
+.mid{background:#f4e8c8;color:#6b4d16;font-weight:800}
+.bad{background:#f6ddd2;color:#8a3b1f;font-weight:800}
+.exec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:22px 0}
+@media(max-width:820px){.exec-grid{grid-template-columns:1fr}}
+.exec{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.exec::after{content:attr(data-n);position:absolute;right:14px;top:0;font-family:"Songti SC","Noto Serif SC",serif;font-size:72px;line-height:1;color:rgba(18,50,63,.07);font-weight:700}
+.exec h3{font-size:23px;margin:0 0 2px;position:relative}
+.exec .role{font-size:12px;letter-spacing:.06em;color:var(--terra);font-weight:800;margin-bottom:10px;position:relative}
+.exec p{font-size:13.5px;margin:7px 0;color:#3a3a35;position:relative}
+.exec .verdict{font-size:12.5px;background:#faf6ec;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:12px;position:relative}
+.score-bars{margin:18px 0 4px}
+.score-bar{display:grid;grid-template-columns:190px 1fr 46px;gap:12px;align-items:center;margin:10px 0;font-size:13px}
+@media(max-width:640px){.score-bar{grid-template-columns:120px 1fr 40px;font-size:12px}}
+.sb-label{font-weight:700;color:var(--navy)}
+.sb-track{height:16px;background:var(--sand);border-radius:999px;overflow:hidden}
+.sb-fill{height:100%;border-radius:999px}
+.sb-fill.a{background:var(--terra);width:77%}
+.sb-fill.b{background:var(--amber);width:81%}
+.sb-fill.c{background:var(--teal);width:75.6%}
+.sb-fill.d{background:#7b8b83;width:71%}
+.sb-fill.e{background:#8d6e63;width:70%}
+.sb-num{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+.deep-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);margin:18px 0}
+.deep-card .num{font-size:11px;letter-spacing:.12em;color:var(--terra);font-weight:800;margin-bottom:6px}
+.deep-card h3{font-size:23px;margin:0 0 2px}
+.deep-card .role{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.flow-step{flex:1 1 170px;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px;position:relative;box-shadow:var(--shadow)}
+.flow-step .n{font-size:10px;letter-spacing:.1em;color:var(--terra);font-weight:800}
+.flow-step h4{margin:3px 0 4px;font-size:14px;color:var(--navy)}
+.flow-step p{margin:0;font-size:12px;color:var(--muted);line-height:1.6}
+.timeline{border-left:2px solid var(--line);margin:18px 0 0 8px;padding-left:22px}
+.tl-item{position:relative;padding:0 0 22px}
+.tl-item::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--navy);border:3px solid var(--paper)}
+.tl-item.alt::before{background:var(--terra)}
+.tl-item .wk{font-weight:800;color:var(--terra);font-size:12px;letter-spacing:.04em}
+.tl-item h4{margin:2px 0 4px;font-size:15px}
+.tl-item p{margin:0;font-size:13px;color:#3a3a35}
+.mini-list{margin:6px 0 0;padding-left:18px;font-size:13px;color:#3a3a35;line-height:1.7}
+.mini-list li{margin:2px 0}
+.checklist{list-style:none;padding:0;margin:10px 0}
+.checklist li{padding:9px 0 9px 28px;border-bottom:1px dashed var(--line);position:relative;font-size:13.2px;color:#3a3a35}
+.checklist li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800}
+.checklist.red li::before{content:"!";color:var(--terra);font-weight:800}
+.script-box{background:#faf6ec;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:0 12px 12px 0;padding:16px 18px;margin:12px 0;font-size:13.2px;color:#3a3a35}
+.script-box .who{font-size:10.5px;letter-spacing:.1em;color:var(--terra);font-weight:800;margin-bottom:5px}
+.script-box p{margin:0}
+.q-list{counter-reset:q;list-style:none;padding:0;margin:12px 0}
+.q-list li{counter-increment:q;position:relative;padding:10px 0 10px 38px;border-bottom:1px dashed var(--line);font-size:13.2px;color:#3a3a35}
+.q-list li::before{content:counter(q);position:absolute;left:0;top:9px;width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.day-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.day-card h3{font-size:18px;margin:0 0 6px}
+.day-card .day-list{list-style:none;padding:0;margin:8px 0 0}
+.day-card .day-list li{font-size:12.5px;color:#3a3a35;padding:4px 0 4px 0;border-bottom:1px dashed #eee7d9;line-height:1.6}
+.day-card .day-list li:last-child{border-bottom:0}
+.day-card .day-list b{color:var(--terra);font-variant-numeric:tabular-nums;margin-right:6px}
+.final-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+@media(max-width:760px){.final-actions{grid-template-columns:1fr}}
+.final-action{background:var(--navy);color:#e8efec;border-radius:14px;padding:18px}
+.final-action .n{font-size:10px;letter-spacing:.14em;color:#e8b96b;font-weight:800}
+.final-action h4{margin:4px 0 4px;font-size:15px;color:#fff}
+.final-action p{margin:0;font-size:12.5px;color:#cfdbd6;line-height:1.65}
+.small-note{font-size:11.5px;color:var(--muted);margin-top:8px}
+.spectrum{margin:18px 0 4px}
+.spec-row{display:grid;grid-template-columns:250px 1fr 52px;gap:12px;align-items:center;margin:9px 0;font-size:12.8px}
+@media(max-width:640px){.spec-row{grid-template-columns:150px 1fr 40px;font-size:12px}}
+.spec-label{font-weight:700;color:var(--navy)}
+.spec-track{height:14px;background:var(--sand);border-radius:999px;overflow:hidden}
+.spec-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal),var(--navy-2))}
+.spec-num{font-weight:800;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.before-after{width:100%;min-width:760px;font-size:12.8px}
+.before-after th{background:var(--navy);color:#f6f1e5;padding:9px;text-align:left}
+.before-after td{padding:9px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.before-after td:first-child{color:var(--muted)}
+.before-after td:last-child{color:var(--ink);font-weight:600}
+.source-list{font-size:12.5px;color:#3a3a35;line-height:1.9}
+.source-list li{margin:4px 0}
+footer{max-width:1120px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);font-size:12px}
+@media print{
+  .toc,.print-btn{display:none}
+  body{background:#fff}
+  .hero{padding:30px 20px}
+  section{padding:26px 0;break-inside:avoid}
+  .deep-card,.card,.kpi,.flow-step,.day-card,.exec,.final-action{break-inside:avoid;box-shadow:none}
+  table{min-width:0;font-size:10px}
+  .compare,.hm,.before-after{min-width:0}
+  .row-note{max-width:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="stamp">公开版<br>客观调研</div>
+    <div class="kicker">Computing · Career research · 2026</div>
+    <h1>计算机相关<br><em>40 岁还能往哪走</em></h1>
+    <p class="lede">40 岁、计算机软件专业背景，继续留在计算机行业，还有哪些可持续的岗位？本文把 36 个岗位按年龄友好度、学历门槛、经验复用、岗位量与入行速度拆开，给出三条相对可行的路径：工业软件 / 上位机、行业信息化、信创数据库 / 系统集成。AI 是加分项，不是主线。</p>
+    <div class="hero-meta">
+      <span class="chip">画像：40 岁 / 计算机软件专业</span>
+      <span class="chip">3 条路径 + 36 个岗位</span>
+      <span class="chip">客观评分：B 4.05 / A 3.85 / C 3.78</span>
+      <span class="chip">12–24 个月，带检查点</span>
+      <span class="chip hot">AI 只做加分项</span>
+      <span class="chip">2026-10</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#conclusion">00 一页结论</a>
+    <a href="#premise">01 研究对象与口径</a>
+    <a href="#agemap">02 年龄地图</a>
+    <a href="#map">03 岗位全景</a>
+    <a href="#compare">04 三方向对比</a>
+    <a href="#six">05 六种具体活</a>
+    <a href="#score">06 评分与推荐</a>
+    <a href="#route">07 路线与 deadline</a>
+    <a href="#action">08 12 个月行动</a>
+    <a href="#skills">09 技能·作品·证书</a>
+    <a href="#beijing">10 北京岗位地图</a>
+    <a href="#pitfall">11 避坑清单</a>
+    <a href="#verify">12 待验证与决策门</a>
+    <a href="#note">13 说明与来源</a>
+    <button class="print-btn" onclick="window.print()">打印 / 存 PDF</button>
+  </div>
+</nav>
+
+<main>
+
+<section id="conclusion">
+  <div class="section-head"><span class="section-num">00</span><h2>一页结论</h2></div>
+  <p class="sub">如果今天只读一页，读这一页。下面是排序、理由和 30 秒行动版；具体拆解在后面。</p>
+
+  <div class="callout">
+    <strong>先给结论：</strong>对 40 岁、计算机软件专业背景的人，计算机行业内相对可行的不是继续挤通用开发，而是三条“经验复利型”路径。按公开市场可及性，<b>B · 行业信息化（MES / 医疗）</b>最容易上车（4.05）；按技能延续性，<b>A · 工业软件 / 上位机</b>最高（3.85）；<b>C · 信创数据库 / 系统集成</b>最抗年龄（3.78），但入门最慢。合理组合不是三选一，而是：<b>B 上车 + A 专精 + C 长期</b>。AI 不要当主线，只当三条线共同的加分项。
+  </div>
+
+  <div class="exec-grid">
+    <div class="exec" data-n="B">
+      <div class="role">上车线 · 公开岗位最多</div>
+      <h3>B · 行业信息化（MES / 医疗）</h3>
+      <p>MES 二次开发/接口、医院 HIS 运维/接口、政务系统运维；用 Java/C#/Vue/SQL 交付行业系统。</p>
+      <p><b>代价：</b>客户/科室沟通多、出差驻场、工资比互联网低；纯实施岗正在被云化和低代码挤压。</p>
+      <div class="verdict">适合：希望尽快上岗、能接受客户沟通与驻场的人。客户接触是 B 的主要成本，不是缺点。</div>
+    </div>
+    <div class="exec" data-n="A">
+      <div class="role">专精线 · 技能延续最好</div>
+      <h3>A · 工业软件 / 上位机</h3>
+      <p>用 C#/Qt 写上位机，采集 PLC、传感器、仪器、机器人的数据，做实时监控、报警、报表、追溯；对接 MES/ERP。</p>
+      <p><b>代价：</b>要补 C#/Qt、Modbus/OPC UA、PLC 概念；岗位比互联网少；现场调试有出差。</p>
+      <div class="verdict">适合：有开发基础、愿意补工业协议与行业知识、能接受 3–6 个月切换的人。</div>
+    </div>
+    <div class="exec" data-n="C">
+      <div class="role">长期线 · 最抗年龄</div>
+      <h3>C · 信创数据库 / 系统集成</h3>
+      <p>国产数据库迁移、DBA、Linux/虚拟化/存储/备份、政企驻场运维；卖的是“系统不出事”。</p>
+      <p><b>代价：</b>入门最慢、驻场多、客户沟通中等；初级 DBA 岗位少，40 岁从零开始会被质疑。</p>
+      <div class="verdict">适合：愿意花 6–12 个月考证 + 做迁移项目、把年龄变成长处的人。</div>
+    </div>
+  </div>
+
+  <div class="callout amber">
+    <strong>30 秒行动版：</strong>先统计 50 个目标 JD，确认哪些岗位真的接受 40 岁；3 周内做一个“设备采集 + 实时曲线 + 报警”的上位机 demo；同时投工业软件、MES、医疗信息化、信创集成商；3 个月做一次复盘。<b>执行上只允许一条主线：B 先上车；A 用业余时间做作品；C 只做长期证书线。</b>
+  </div>
+
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card">
+      <span class="tag tag-blue">记住 01</span>
+      <h3>计算机行业不是整体年龄友好</h3>
+      <p>互联网大厂、算法、游戏、云原生、测试开发，40 岁都偏紧。真正友好的是“经验复利型”岗位：系统集成、信创 DBA、工业软件、行业信息化、安全合规、传统企业 IT。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">记住 02</span>
+      <h3>学历不是无关，是三道门</h3>
+      <p>“本科及以上”是一道门，“全日制本科”是一道门，“第一学历”又是一道门。非全日制本科能过大多数第一道门，但过不了后两道。主战场是集成商、行业软件、工业软件、外包、安全服务，不是大厂/国企编制。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">记住 03</span>
+      <h3>AI 不是救生艇</h3>
+      <p>AI 岗位更年轻、更卡学历、技术迭代更快。40 岁从零冲算法，胜率很低；把 AI 用在“设备故障知识库、报告生成、代码辅助、行业 demo”上，才是加分项。</p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:24px">
+    <strong>这份文档不包含：</strong>非计算机方向（工业自动化、PLC/机器人、板级维修等另见《非计算机方向转行调研》）。本文只讨论计算机相关、能写代码或管系统、对年龄和学历相对友好的方向；3D 视频包装不参与排序。
+  </div>
+</section>
+
+<section id="premise">
+  <div class="section-head"><span class="section-num">01</span><h2>研究对象与口径</h2></div>
+  <p class="sub">本文不针对任何具体个人，只讨论一个通用画像：40 岁、计算机软件专业背景，希望继续留在计算机行业、寻找可持续岗位的人。具体技术栈、学历层次、从业年限和所在城市不作预设。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:780px">
+      <thead><tr><th style="width:150px">维度</th><th>本文口径</th><th>对分析的影响</th></tr></thead>
+      <tbody>
+        <tr><td>年龄</td><td>40 岁</td><td>互联网/算法/云原生偏紧；系统集成、信创 DBA、工业软件、行业信息化、传统企业 IT 更宽容。不与 25 岁比加班。</td></tr>
+        <tr><td>专业</td><td>计算机软件相关专业</td><td>具备软件工程基础；是否科班、学历层次、具体语言不预设，按“有开发能力”处理。</td></tr>
+        <tr><td>经验</td><td>不限定年限与方向</td><td>“经验复用”按岗位所需能力的可迁移程度打分，不按某一段具体履历打分。</td></tr>
+        <tr><td>地点</td><td>以北京/一线城市公开招聘为样本</td><td>收入、岗位量按一线口径；其他城市需按当地市场折算。</td></tr>
+        <tr><td>工作方式</td><td>客户接触、出差、驻场只作客观描述</td><td>是否接受由读者结合自身情况判断，不进入评分权重，也不作为岗位优劣的依据。</td></tr>
+        <tr><td>目标</td><td>可持续就业、经验可积累、年龄不构成硬门槛</td><td>优先“经验复利型”岗位；避免纯体力、纯重复、无积累。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <strong>为什么用“画像”而不是“个案”：</strong>职业研究最容易犯的错，是把一个人的偏好当成普遍规律。本文只保留“40 岁 + 计算机软件专业”两个条件；收入、学历、性格、家庭、城市偏好都不预设，读者可以按自己的条件替换。
+  </div>
+
+  <div class="callout warn">
+    <strong>一个必须纠正的前提：</strong>“计算机相关”不等于“继续投通用开发”。移动端/前端/通用 CRUD 是计算机行业里年龄歧视最重的细分之一；本文讨论的是换到“经验越攒越值钱”的场景：设备、系统、数据、行业、合规。
+  </div>
+
+  <h3 style="margin-top:30px">40 岁计算机软件背景的通用资产与负债</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-green">资产</span>
+      <h3>不是“40 岁小白”</h3>
+      <ul class="mini-list">
+        <li><b>软件工程基础：</b>需求拆解、系统设计、接口、数据、测试、上线，能独立交付一个模块或系统。</li>
+        <li><b>学习与迁移能力：</b>语言和框架可迁移；真正稀缺的是把业务翻译成系统的能力。</li>
+        <li><b>复杂问题处理：</b>线上故障、性能、兼容性、历史包袱，这些需要经验，不是年轻就能替代。</li>
+        <li><b>跨团队协作：</b>和产品、测试、运维、客户对需求，能推动交付。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">负债</span>
+      <h3>也要承认的短板</h3>
+      <ul class="mini-list">
+        <li><b>年龄筛选：</b>部分 JD 直接写“35 岁以下”；公开招聘是年龄筛选的第一道闸门。</li>
+        <li><b>学历筛选：</b>“本科及以上”“全日制本科”“第一学历”是三道不同的门。</li>
+        <li><b>技术标签绑定：</b>只写某一门语言/某一类应用，容易被归进“可替代”的池子。</li>
+        <li><b>行业知识缺口：</b>制造、医疗、信创、政务的业务知识，需要 3–6 个月补课。</li>
+        <li><b>薪资预期：</b>换行业场景通常要接受阶段性降薪；先上车，再谈涨幅。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout amber">
+    <strong>三条线不是三选一：</strong>B 行业信息化最容易在公开市场上车；A 工业软件/上位机的技能延续性最好；C 信创数据库/系统集成最抗年龄、但入门最慢。合理组合是“一条上车线 + 一条专精线 + 一条长期线”，而不是同时学三门技术。
+  </div>
+</section>
+
+<section id="agemap">
+  <div class="section-head"><span class="section-num">02</span><h2>年龄地图：40 岁难在哪，哪里不难</h2></div>
+  <p class="sub">先把“计算机行业”拆开。它不是一块铁板：有的细分开门就写“35 岁以下”，有的细分 45 岁还在抢人。要做的是避开前者，进入后者。</p>
+
+  <h3>为什么计算机行业整体对 40 岁不友好</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-terra">结构原因</span>
+      <h3>企业买的是“年轻 + 可加班”</h3>
+      <p>互联网的商业模式靠快速试错、频繁上线，企业愿意用“低薪、能熬夜、好管理”的年轻人换速度。40 岁的生活成本与家庭责任通常更高、不能无限加班，在成本模型里先输一截。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">筛选原因</span>
+      <h3>年龄/学历是低成本的筛子</h3>
+      <p>一个岗位几百份简历，HR 用“35 岁以下、全日制本科”先筛掉 80%，比逐个看项目便宜。很多简历在这一步被筛掉，往往不是技术不行，是筛选规则。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">技术原因</span>
+      <h3>技术栈 3–5 年换一代</h3>
+      <p>移动端、前端、云原生、AI 都在快速换代。企业默认“学习速度 = 年龄”，40 岁会被怀疑“学不动、贵、不好管”。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">组织原因</span>
+      <h3>金字塔上面没有那么多位置</h3>
+      <p>管理岗少、专家岗更少。40 岁还在 执行层、没晋升，会被认为“性价比低”；这不是个人能力问题，是组织金字塔的必然。</p>
+    </div>
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>2026 年的两个新变量：</strong>一是“去初级化”——脉脉 2026 春招数据显示，要求 3 年以上经验的岗位超过七成，1 年以内新人岗缩了 20%；这对资深者是结构性利好，但只对“经验可复用”的岗位。二是政策松动——2026 国考年龄放宽到 38 岁，应届硕博 43 岁，安徽、湖北、湖南等省考跟进；但市场招聘的滞后比政策长，别等政策救市。
+  </div>
+
+  <h3 style="margin-top:30px">年龄友好度光谱：越往右越抗年龄</h3>
+  <p class="sub" style="margin-bottom:10px">下面是相对比较，不是绝对判断；同一岗位在不同企业差异很大。</p>
+  <div class="spectrum">
+    <div class="spec-row"><span class="spec-label">互联网大厂 / 算法 / 游戏</span><div class="spec-track"><div class="spec-fill" style="width:30%"></div></div><span class="spec-num">1.5</span></div>
+    <div class="spec-row"><span class="spec-label">云原生 / SRE / 测试开发</span><div class="spec-track"><div class="spec-fill" style="width:40%"></div></div><span class="spec-num">2.0</span></div>
+    <div class="spec-row"><span class="spec-label">企业应用 / Java 后端</span><div class="spec-track"><div class="spec-fill" style="width:50%"></div></div><span class="spec-num">2.5</span></div>
+    <div class="spec-row"><span class="spec-label">车载 / 座舱测试</span><div class="spec-track"><div class="spec-fill" style="width:50%"></div></div><span class="spec-num">2.5</span></div>
+    <div class="spec-row"><span class="spec-label">行业信息化 / 医疗 / 政务</span><div class="spec-track"><div class="spec-fill" style="width:70%"></div></div><span class="spec-num">3.5</span></div>
+    <div class="spec-row"><span class="spec-label">工业软件 / 上位机 / 嵌入式</span><div class="spec-track"><div class="spec-fill" style="width:80%"></div></div><span class="spec-num">4.0</span></div>
+    <div class="spec-row"><span class="spec-label">安全合规 / 等保 / 密评</span><div class="spec-track"><div class="spec-fill" style="width:80%"></div></div><span class="spec-num">4.0</span></div>
+    <div class="spec-row"><span class="spec-label">系统集成 / 运维 / 信创 DBA</span><div class="spec-track"><div class="spec-fill" style="width:90%"></div></div><span class="spec-num">4.5</span></div>
+    <div class="spec-row"><span class="spec-label">传统企业 IT / 医院信息科</span><div class="spec-track"><div class="spec-fill" style="width:100%"></div></div><span class="spec-num">5.0</span></div>
+  </div>
+  <div class="legend">
+    <span><b>注意：</b>“年龄友好”不等于“收入高”。最右边两个（传统企业 IT、医院信息科）很稳，但工资和天花板低；需要在“抗年龄”和“收入/成长”之间取平衡。</span>
+  </div>
+
+  <h3 style="margin-top:30px">学历门槛地图：哪些门是开的</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:860px">
+      <thead><tr><th style="width:190px">雇主类型</th><th>学历要求</th><th>年龄现实</th><th>40 岁进入难度</th></tr></thead>
+      <tbody>
+        <tr><td>互联网大厂 / 算法</td><td>本科起步，硕士优先；第一学历敏感</td><td>35 岁是硬门槛，40 岁基本关闭</td><td>低；除非内推+极强匹配</td></tr>
+        <tr><td>国企 / 银行 / 医院编制</td><td>全日制本科/硕士，部分卡应届</td><td>30–35 岁，编制更严</td><td>低；可走外包/驻场</td></tr>
+        <tr><td>外企</td><td>本科，英语能沟通</td><td>相对宽松，但 HC 少</td><td>中；英语是门槛</td></tr>
+        <tr><td>行业软件 / 医疗信息化</td><td>本科（部分接受非全日制），专科可做实施/运维</td><td>35–45 岁常见</td><td>高；经验/稳定性说话</td></tr>
+        <tr><td>工业软件 / 自动化集成</td><td>本科，专科可在小公司/集成商</td><td>35–45 岁常见</td><td>高；作品/项目说话</td></tr>
+        <tr><td>信创集成 / 外包 / 安全服务</td><td>大专可，本科加分</td><td>40+ 常见，驻场多</td><td>高；证书+驻场+经验</td></tr>
+        <tr><td>独立开发 / 远程</td><td>无门槛</td><td>无年龄门槛</td><td>中；收入不稳，先做副线</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <strong>年龄友好的本质：</strong>企业愿意为“确定性”付钱——系统不出事、出了问题能兜底、客户/合规/历史包袱有人扛。这些是年龄的正资产。所以更稳的选择是“责任型 / 经验型 / 合规型”岗位，而不是“速度型 / 创意型 / 加班型”岗位。重点不是证明“还能熬夜”，而是证明“能让系统不出事、让项目交付、让客户放心”。
+  </div>
+
+  <h3 style="margin-top:30px">2026 年计算机行业还有哪些红利</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-blue">红利 01</span>
+      <h3>信创 / 国产化替代</h3>
+      <p>信创已从“建议替换”转为“强制替换”，国测四期名单包含达梦、人大金仓等国产数据库；政务、金融、医疗、能源都在迁移。缺的是“懂应用 + 懂数据库 + 能迁移”的复合人，不是单纯装软件的人。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">红利 02</span>
+      <h3>工业软件 / 智能制造</h3>
+      <p>智能制造/智能装备人才缺口被媒体引述为 450 万（猎聘口径，范围很宽，不能当作工业软件单一岗位缺口）；工业软件研发招聘年薪 30–55 万。真正稀缺的是 IT/OT 复合：既懂软件，又懂设备、协议、产线。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">红利 03</span>
+      <h3>医疗 / 政务数字化</h3>
+      <p>医院互联互通、电子病历、医疗信创、政务信创持续投入。但纯“实施顾问”在淡出——产品标准化、云化部署、低代码配置正在替代人力；要往“接口开发 / 数据治理 / 运维 / 集成平台”走。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">红利 04</span>
+      <h3>安全 / 合规</h3>
+      <p>等保、密评、数据安全是政策刚需；全球网络安全人才缺口 2025 年约 480 万，安全运营岗占比最高。但测评/合规岗位报告多、客户沟通强度高，适合能接受交付沟通的人，只作备选。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">红利 05</span>
+      <h3>AI 落地</h3>
+      <p>企业私有化部署、RAG/Agent、知识库需求真实存在；智联口径 AI 工程师起薪约 17,038 元/月，头部算法岗更高。但 AI 岗位更年轻、更卡学历、技术迭代更快；40 岁从零冲算法胜率低，做“AI + 行业”的加分项更现实。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-gray">不是红利</span>
+      <h3>“只会写页面”的岗位</h3>
+      <p>移动端/前端/CRUD 是年龄歧视最重的区域，且 AI 编码工具正在压缩初级岗位。继续只投这类岗位，等于用年龄劣势去竞争年轻人的优势。</p>
+    </div>
+  </div>
+</section>
+
+<section id="map">
+  <div class="section-head"><span class="section-num">03</span><h2>岗位全景：36 条计算机相关的活</h2></div>
+  <p class="sub">下面是“计算机相关”的全景，不是要求全部学习，而是了解地图有多大。按 6 个家族分组，共 36 条，每条给出门槛、周期、收入、红利和坑。收入是北京/一线城市公开招聘与从业者口径的综合估计，波动很大；“入门”指能上岗，不等于能独立。<b>家族编号只用于分类，和后面的主线 A/B/C 无关；主线在 04 节重新命名。</b></p>
+
+  <div class="callout amber">
+    <strong>先看筛选条件：</strong>筛选口径是：年龄相对友好、学历不硬卡、经验可复用、岗位量足够、收入可接受、入行速度可控。以下方向因此降级或排除：售前/客户成功/渠道/FDE/OEM 技术支持/纯实施顾问（客户沟通占比高）；AI 算法（学历/年龄硬卡）；纯测试外包/桌面运维（天花板低）；3D 视频包装（不参与排序）；工业自动化（另见非计算机报告）。
+  </div>
+
+  <div class="table-wrap" style="margin-top:18px">
+    <table style="min-width:1180px">
+      <thead>
+        <tr><th style="width:210px">方向 / 岗位</th><th style="width:160px">门槛 / 证书</th><th style="width:110px">学习周期</th><th style="width:170px">收入（入门 → 1–3 年 → 5 年+）</th><th style="width:190px">红利 / 需求</th><th style="width:220px">主要的坑</th></tr>
+      </thead>
+      <tbody>
+        <tr class="group"><td colspan="6">家族 01 · 基础设施 / 信创</td></tr>
+        <tr><td class="name">信创数据库 DBA / 迁移<span class="row-note">达梦、人大金仓、OceanBase、GaussDB</span></td><td>Linux/SQL；Oracle/MySQL 基础；国产库认证</td><td>6–12 个月</td><td>10–15K → 15–25K → 20–30K</td><td>信创强制替换、国产库迁移、政务/金融/医疗</td><td>驻场多、客户沟通、入门慢；初级 DBA 岗位少</td></tr>
+        <tr><td class="name">系统集成 / 交付运维<span class="row-note">政企、医疗、金融信创项目</span></td><td>Linux、虚拟化、存储、备份、网络</td><td>3–6 个月</td><td>8–12K → 12–18K → 15–25K</td><td>信创项目多、集成商常年招人</td><td>出差驻场、打杂、天花板中等</td></tr>
+        <tr><td class="name">Linux 运维 / 虚拟化 / 存储备份</td><td>RHCE/华为/VMware；Shell/Python</td><td>3–6 个月</td><td>8–12K → 12–18K → 15–22K</td><td>存量系统、信创替代、数据中心</td><td>值班/背锅、云化挤压、年龄偏紧</td></tr>
+        <tr><td class="name">网络工程师（政企 / HCIE）</td><td>HCIA/HCIP/HCIE；网络基础</td><td>6–12 个月</td><td>7–10K → 10–16K → 15–25K</td><td>政企网络、信创网络、弱电智能化</td><td>证书贵、出差、客户沟通</td></tr>
+        <tr><td class="name">数据中心运维</td><td>电气/制冷/网络基础；低压证加分</td><td>1–3 个月</td><td>6–9K → 9–14K → 12–18K</td><td>北京周边数据中心集群</td><td>倒班、偏远、责任大</td></tr>
+        <tr><td class="name">云运维 / SRE<span class="row-note">四种岗，差异极大，见本节末尾说明</span></td><td>K8s、云平台、自动化、可观测</td><td>3–6 个月</td><td>10–15K → 15–25K → 25–35K</td><td>云原生、企业上云</td><td>年龄偏紧、on-call、技术迭代快；只有“信创云驻场”值得投</td></tr>
+        <tr><td class="name">银行主机 / COBOL<span class="row-note">核心系统存量维护</span></td><td>主机、COBOL、JCL；银行背景</td><td>6–12 个月</td><td>10–15K → 15–22K → 20–30K</td><td>存量核心系统、金融信创</td><td>岗位少、学历卡、技术窄</td></tr>
+        <tr><td class="name">IT 桌面 / Helpdesk</td><td>Windows、网络、办公设备</td><td>1–3 个月</td><td>5–8K → 7–10K → 8–12K</td><td>企业刚需、稳定</td><td>低薪、打杂、天花板低</td></tr>
+
+        <tr class="group"><td colspan="6">家族 02 · 安全 / 合规</td></tr>
+        <tr><td class="name">等保测评</td><td>等保测评师/CISP；测评机构</td><td>3–6 个月</td><td>8–12K → 12–18K → 15–25K</td><td>政策刚需、政企/医疗/金融</td><td>报告多、客户沟通、出差</td></tr>
+        <tr><td class="name">密评（商用密码应用安全性评估）</td><td>密评证书、密码学基础</td><td>6–12 个月</td><td>10–15K → 15–25K → 20–30K</td><td>等保三级以上密评刚需</td><td>门槛高、证书、报告/沟通</td></tr>
+        <tr><td class="name">安全运维 / SOC</td><td>安全设备、日志、应急响应</td><td>3–6 个月</td><td>8–12K → 12–18K → 15–25K</td><td>企业安全运营、托管服务</td><td>值班、背锅、客户沟通</td></tr>
+        <tr><td class="name">渗透测试</td><td>Web/内网/工具；CISP-PTE 加分</td><td>6–12 个月</td><td>10–15K → 15–25K → 20–35K</td><td>红队、攻防演练</td><td>年龄偏紧、技术更新快、出差</td></tr>
+        <tr><td class="name">数据安全 / 合规</td><td>数据安全法、分类分级、DLP</td><td>3–6 个月</td><td>10–15K → 15–22K → 20–30K</td><td>合规、数据出境、医疗/金融</td><td>文档/沟通多、岗位少</td></tr>
+        <tr><td class="name">电子取证 / 司法鉴定</td><td>取证/司法鉴定资质</td><td>12–24 个月</td><td>8–15K → 15–25K</td><td>司法、公安、合规</td><td>门槛高、编制、学历</td></tr>
+
+        <tr class="group"><td colspan="6">家族 03 · 行业信息化</td></tr>
+        <tr><td class="name">医疗 HIS/LIS/PACS 实施运维</td><td>医院流程、SQL、接口</td><td>1–3 个月</td><td>6–10K → 10–15K → 12–20K</td><td>医疗数字化、医疗信创</td><td>纯实施在淡出、客户沟通、出差</td></tr>
+        <tr><td class="name">医疗接口 / 集成平台开发</td><td>Java/C#、HL7/FHIR/DICOM</td><td>3–6 个月</td><td>10–15K → 15–22K → 18–28K</td><td>医院互联互通、电子病历评级</td><td>医院驻场、合规、沟通</td></tr>
+        <tr><td class="name">MES / ERP 二次开发</td><td>Java/C#、SQL、制造流程</td><td>3–6 个月</td><td>10–15K → 15–22K → 18–30K</td><td>制造数字化、智能工厂</td><td>出差、客户、容易做成纯实施</td></tr>
+        <tr><td class="name">PLM / CAD / CAE 二次开发</td><td>C++/C#、CAD API、图形学</td><td>6–12 个月</td><td>12–18K → 18–25K → 22–35K</td><td>工业软件国产化</td><td>岗位少、数学/图形门槛</td></tr>
+        <tr><td class="name">政务 / 国企信息化运维</td><td>Linux、数据库、中间件</td><td>3–6 个月</td><td>8–12K → 12–18K → 15–22K</td><td>政务信创、国企数字化</td><td>驻场、编制、流程慢</td></tr>
+        <tr><td class="name">金融 IT 运维 / 外包</td><td>Linux、数据库、银行系统</td><td>3–6 个月</td><td>10–15K → 15–22K → 18–28K</td><td>金融信创、核心系统</td><td>外包、值班、合规</td></tr>
+        <tr><td class="name">教育 / 校园信息化</td><td>网络、系统、一卡通</td><td>1–3 个月</td><td>6–10K → 9–14K → 12–18K</td><td>教育数字化</td><td>低薪、编制、杂事多</td></tr>
+
+        <tr class="group"><td colspan="6">家族 04 · 工业软件 / 嵌入式 / 机器视觉</td></tr>
+        <tr><td class="name">上位机开发（C#/Qt）<span class="row-note">HMI、SCADA、设备监控</span></td><td>C#/C++、Qt/WPF、通信</td><td>3–6 个月</td><td>10–15K → 15–22K → 20–35K</td><td>智能制造、设备上云</td><td>岗位分散、出差、行业知识</td></tr>
+        <tr><td class="name">设备数据采集 / SCADA</td><td>Modbus、OPC UA、MQTT、PLC 基础</td><td>3–6 个月</td><td>9–14K → 14–20K → 18–28K</td><td>工业物联网、产线数字化</td><td>现场、出差、协议杂</td></tr>
+        <tr><td class="name">工业机器视觉</td><td>Halcon/OpenCV、C#、光学基础</td><td>6–12 个月</td><td>10–15K → 15–25K → 20–35K</td><td>检测/定位/测量</td><td>现场、出差、算法门槛</td></tr>
+        <tr><td class="name">嵌入式 MCU / Linux BSP</td><td>C、RTOS、Linux、硬件基础</td><td>6–12 个月</td><td>8–12K → 12–20K → 18–30K</td><td>智能硬件、工控、机器人</td><td>硬件门槛、调试苦、岗位分散</td></tr>
+        <tr><td class="name">机器人 / 具身智能部署运维</td><td>ROS、Linux、电气基础</td><td>3–6 个月</td><td>8–12K → 12–20K → 18–28K</td><td>机器人量产、工厂/商用部署</td><td>出差、现场、年龄偏紧</td></tr>
+        <tr><td class="name">车载 / 座舱测试</td><td>CAN/LIN、诊断、测试工具</td><td>3–6 个月</td><td>9–14K → 14–20K → 18–28K</td><td>智能汽车、座舱/车控</td><td>年龄偏紧、出差、外包多</td></tr>
+
+        <tr class="group"><td colspan="6">家族 05 · AI / 数据</td></tr>
+        <tr><td class="name">AI 应用 / 私有化部署</td><td>Python、Linux、大模型、RAG</td><td>3–6 个月</td><td>12–18K → 18–28K → 25–40K</td><td>企业 AI 落地、私有化</td><td>年龄/学历、客户、技术更新快</td></tr>
+        <tr><td class="name">RAG / Agent 工程</td><td>LangChain/Dify、向量库、后端</td><td>3–6 个月</td><td>12–18K → 18–30K → 25–40K</td><td>知识库、客服、办公自动化</td><td>同质化、Demo 多、落地难</td></tr>
+        <tr><td class="name">数据治理 / 数仓</td><td>SQL、建模、治理、行业知识</td><td>6–12 个月</td><td>10–15K → 15–22K → 18–30K</td><td>数据资产、医疗/政务/金融</td><td>年龄偏紧、文档/沟通、项目制</td></tr>
+        <tr><td class="name">BI / 数据分析</td><td>SQL、BI 工具、业务理解</td><td>3–6 个月</td><td>8–12K → 12–18K → 15–25K</td><td>企业数字化、经营分析</td><td>低薪、汇报、年龄</td></tr>
+        <tr><td class="name">AI 算法 / 训练</td><td>硕士/论文/算法工程</td><td>12–24 个月</td><td>20–35K → 30–50K+</td><td>大模型、CV/NLP</td><td>学历硬卡、年龄紧、竞争激烈</td></tr>
+
+        <tr class="group"><td colspan="6">家族 06 · 传统企业 IT / 非雇主</td></tr>
+        <tr><td class="name">医院 / 学校 / 国企信息中心</td><td>系统、网络、数据库；编制考试</td><td>1–3 个月</td><td>8–15K → 12–20K → 15–25K</td><td>稳定、医疗/教育/政务数字化</td><td>编制/学历/年龄、天花板低</td></tr>
+        <tr><td class="name">企业 IT 外包 / 驻场</td><td>桌面、网络、系统</td><td>1–3 个月</td><td>6–10K → 9–14K → 12–18K</td><td>岗位多、门槛低</td><td>低薪、打杂、外包身份</td></tr>
+        <tr><td class="name">独立开发 / 小产品</td><td>全栈、产品、运营</td><td>6–12 个月</td><td>0–10K → 10–20K → 不稳定</td><td>无年龄/学历门槛</td><td>收入不稳、孤军、现金流</td></tr>
+        <tr><td class="name">技术写作 / 远程外包</td><td>写作、英语、技术理解</td><td>3–6 个月</td><td>6–12K → 10–20K → 15–30K</td><td>全球市场、开发者文档</td><td>英语、竞争、收款</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span><b>说明：</b>收入为税前月薪综合口径，含项目奖金/补贴；不同企业、不同技术等级差异很大。</span>
+    <span>“入门”＝能上岗，不等于能独立。</span>
+    <span>标注“驻场/出差/客户沟通”的条目，工作方式强度较高，选择前需评估。</span>
+    <span>没有列出的方向，不代表不存在，只代表与本文筛选口径不匹配或信息不足。</span>
+  </div>
+
+  <h3 style="margin-top:36px">补一条：云运维 / SRE 为什么只占一行</h3>
+  <p class="sub" style="margin-bottom:14px">“云运维”不是一个岗位，是四种，混在一起看必然得出错结论——收入高、岗位多、但 40 岁进不去。拆开之后，只有一种值得投。</p>
+
+  <div class="table-wrap">
+    <table style="min-width:940px">
+      <thead><tr><th style="width:250px">子类</th><th style="width:150px">典型雇主</th><th style="width:170px">硬要求</th><th style="width:120px">年龄友好</th><th style="width:150px">客户接触</th><th>结论</th></tr></thead>
+      <tbody>
+        <tr><td class="name">公有云 SRE / 云平台研发<span class="row-note">阿里云、腾讯云、华为云、字节</span></td><td>云厂商总部</td><td>分布式、K8s 原理、Go/Python、算法题</td><td class="bad">低</td><td class="good">低</td><td style="text-align:left">不投。面试强度、on-call 节奏、半年一代技术栈，都在筛能熬的人。</td></tr>
+        <tr><td class="name">企业私有云 / 混合云运维<span class="row-note">VMware、OpenStack、华为云 Stack、自建 K8s</span></td><td>甲方 IT、云集成商</td><td>Linux、网络、虚拟化、容器、脚本</td><td class="mid">中</td><td class="mid">中</td><td style="text-align:left">可投，但本质是“Linux 运维 + 容器”，和 C2 系统集成高度重叠，不必单独算一条路。</td></tr>
+        <tr><td class="name">信创云驻场运维<span class="row-note">华为云 Stack、浪潮云、麒麟云、EasyStack + 政企项目</span></td><td>集成商、政企甲方</td><td>Linux、虚拟化、国产化适配、等保配合</td><td class="good">较高</td><td class="mid">中</td><td style="text-align:left">云运维里唯一真正年龄友好的。卖的是“稳定驻场 + 懂国产化”，不是“能扛大促”。</td></tr>
+        <tr><td class="name">云厂商 TAM / 售后技术支持 / 解决方案架构师</td><td>云厂商、代理商</td><td>产品熟、方案、演示</td><td class="mid">中</td><td class="bad">高</td><td style="text-align:left">不作为推荐。客户沟通/销售属性强，技术积累与岗位稳定性都不匹配。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn" style="margin-top:18px">
+    <strong>为什么它没进主线，三条硬伤：</strong>①通用开发经验在云运维里几乎不复用，等于第二次从零，和信创 DBA 抢的是同一份“新手”预算，但年龄更吃亏；②云原生是 35 岁筛选最狠的地方，值班、故障复盘、版本迭代都按“能熬夜”算人；③表里 25–35K 是“扛得住 on-call 的资深 SRE”的价格，40 岁转行头 1–3 年的真实区间是 10–15K，而且大量挂在外包/驻场名下。
+  </div>
+
+  <div class="callout">
+    <strong>云方向的正确排序：</strong>C1 信创 DBA ＞ C2 系统集成/交付运维 ＞ 信创云驻场运维 ＞ 企业私有云运维 ＞＞ 公有云 SRE。真要走云，就走“政企 + 国产化 + 驻场稳定”这一侧，别去互联网那一侧比年轻。<br>
+    <b>最小验证（3 个月，现金 ≤ ¥3000）：</b>CKA 或华为 HCIP-Cloud（考试费以官网为准）+ 自建一套 K8s 集群做故障演练 demo（Pod 漂移、节点宕机、存储挂载失败），然后专投政企云驻场，不投互联网 SRE。做不出来，就说明这条线不该碰。
+  </div>
+
+  <div class="callout" style="margin-top:24px">
+    <strong>从全景收窄：</strong>综合年龄、学历、经验复用与岗位量，值得进一步比较的是三处——A 工业软件/上位机、B 行业信息化（MES/医疗）、C 信创数据库/系统集成。它们看起来都叫“计算机”，其实是三种不同的人生：A 是产品研发、B 是行业交付、C 是系统兜底。云运维不在其中，理由见上。下面拆开。
+  </div>
+</section>
+
+<section id="compare">
+  <div class="section-head"><span class="section-num">04</span><h2>A / B / C 三方向对比</h2></div>
+  <p class="sub">把三条路放在同一把尺子上：干什么、怎么入、学多久、挣多少、出不出差、接不接触客户、对年龄和学历友不友好、岗位多不多、天花板在哪。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:1000px">
+      <thead><tr><th style="width:120px">维度</th><th>A · 工业软件 / 上位机</th><th>B · 行业信息化（MES/医疗）</th><th>C · 信创数据库 / 系统集成</th></tr></thead>
+      <tbody>
+        <tr><td>具体活</td><td>C#/Qt 上位机、设备数据采集、实时监控、报警、报表、追溯；对接 MES/ERP</td><td>MES 二次开发/接口、医院 HIS 运维/接口、政务系统运维、数据迁移</td><td>国产数据库迁移/DBA、Linux/虚拟化/存储/备份、政企驻场运维</td></tr>
+        <tr><td>入行门槛</td><td>C#/Qt、通信协议、PLC 基础、行业知识</td><td>Java/C#/Vue、SQL、行业流程、客户沟通</td><td>Linux/SQL、Oracle/MySQL、国产库、证书</td></tr>
+        <tr><td>学习周期</td><td>3–6 个月（有开发底子）</td><td>1–3 个月（有开发底子）</td><td>6–12 个月</td></tr>
+        <tr><td>北京岗位量</td><td>中（亦庄/海淀/昌平；工业软件/自动化/设备厂商）</td><td>多（医疗软件/医院/制造/政务）</td><td>中（集成商/信创厂商/驻场）</td></tr>
+        <tr><td>入门收入</td><td>10–15K</td><td>6–10K（实施）／10–15K（开发）</td><td>10–15K</td></tr>
+        <tr><td>1–3 年</td><td>15–22K</td><td>10–18K</td><td>15–25K</td></tr>
+        <tr><td>5 年+</td><td>20–35K</td><td>15–25K</td><td>20–30K</td></tr>
+        <tr><td>出差</td><td>产品研发低；现场调试中–高</td><td>实施中–高；医院运维低</td><td>驻场中–高</td></tr>
+        <tr><td>客户接触</td><td>低–中（技术沟通为主）</td><td>中（科室/工厂/政务）</td><td>中（客户 IT 部门）</td></tr>
+        <tr><td>年龄友好</td><td>较高（经验+行业 know-how）</td><td>高（稳定、行业经验）</td><td>最高（DBA/运维越老越吃香）</td></tr>
+        <tr><td>学历友好</td><td>中（本科；专科可在小公司/集成商）</td><td>中–高（本科；专科可做实施/运维）</td><td>高（大专可，本科加分）</td></tr>
+        <tr><td>多年经验复用</td><td>高（客户端/协议/设备通信/SDK）</td><td>中–高（Java/Vue/接口/交付）</td><td>中（Java/SQL/Linux/迁移）</td></tr>
+        <tr><td>主要坑</td><td>岗位分散、出差、行业知识、C#/Qt 生产经验</td><td>客户沟通、出差、纯实施淡出、工资低</td><td>入门慢、驻场、初级 DBA 岗位少</td></tr>
+        <tr><td>适合谁</td><td>想继续写代码、想碰设备、能接受行业切换</td><td>先要现金流、能接受交付/沟通、想稳定</td><td>愿意考证+做迁移、想长期抗年龄</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>不要用“最高值”做决策。</strong>招聘写的 15–25K 可能是“底薪＋项目奖金＋出差补贴”；工业软件的 25K 可能是“5 年经验＋硕士”；医疗实施的 8K 可能是“底薪＋绩效”。做决策看三个数：<b>中位数、最差情况、这种生活能否接受</b>。
+  </div>
+
+  <h3 style="margin-top:30px">一天是什么样：三种现场</h3>
+  <div class="grid g3" style="margin-top:12px">
+    <div class="day-card">
+      <span class="tag tag-blue">A · 上位机研发</span>
+      <h3>在工位和现场之间</h3>
+      <ul class="day-list">
+        <li><b>09:00</b> 看需求/工单，改 WPF/Qt 界面、数据采集逻辑、报警规则</li>
+        <li><b>11:00</b> 用 Modbus Slave/PLC 模拟器联调，处理串口/TCP 粘包、断线重连</li>
+        <li><b>14:00</b> 和电气/现场工程师对信号表、点位表、报警阈值</li>
+        <li><b>17:00</b> 写测试记录、打包发版；项目期可能去现场调试 1–2 周</li>
+      </ul>
+      <p class="small" style="margin-top:10px">产品岗出差少；项目岗出差多。客户接触是技术沟通，不是销售。</p>
+    </div>
+    <div class="day-card">
+      <span class="tag tag-amber">B · 行业信息化</span>
+      <h3>在客户现场和办公室之间</h3>
+      <ul class="day-list">
+        <li><b>09:00</b> 到客户/医院，处理昨天遗留的接口/数据/权限问题</li>
+        <li><b>11:00</b> 和科室/工厂对流程，改配置、写接口、导数据</li>
+        <li><b>14:00</b> 培训用户、写操作手册、处理投诉/紧急问题</li>
+        <li><b>18:00</b> 回酒店/公司，写日报、改 bug、准备上线</li>
+      </ul>
+      <p class="small" style="margin-top:10px">入门快、稳定；但客户沟通多，纯实施岗正在被云化/低代码挤压。</p>
+    </div>
+    <div class="day-card">
+      <span class="tag tag-green">C · 信创 DBA/集成</span>
+      <h3>在机房/客户现场兜底</h3>
+      <ul class="day-list">
+        <li><b>09:00</b> 巡检数据库/主机/备份，处理告警</li>
+        <li><b>11:00</b> 做迁移评估：schema、存储过程、兼容性、性能</li>
+        <li><b>14:00</b> 和客户 IT 对方案，做备份恢复/主备切换演练</li>
+        <li><b>20:00</b> 变更窗口割接；出问题要能第一时间兜底</li>
+      </ul>
+      <p class="small" style="margin-top:10px">越老越吃香，但驻场多、责任大；初级岗位少，入门最慢。</p>
+    </div>
+  </div>
+</section>
+
+<section id="six">
+  <div class="section-head"><span class="section-num">05</span><h2>六种具体活，别混为一谈</h2></div>
+  <p class="sub">A/B/C 是三类，不是三个岗位。真正决定工作体验的是下面六种具体活：出差多少、年龄友不友好、岗位多不多、天花板在哪。</p>
+
+  <div class="table-wrap">
+    <table class="hm">
+      <thead>
+        <tr><th style="width:210px">具体岗位</th><th>年龄友好</th><th>出差强度</th><th>客户接触</th><th>岗位量</th><th>入门速度</th><th>5 年收入</th><th style="width:230px">一句话定位</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>A1 · 上位机产品研发</td><td class="mid">中高</td><td class="good">低</td><td class="good">低</td><td class="mid">中</td><td class="mid">中</td><td class="good">高</td><td style="text-align:left">与通用软件开发最接近，换到设备/工业场景</td></tr>
+        <tr><td>A2 · 设备数据采集/现场调试</td><td class="mid">中</td><td class="bad">高</td><td class="mid">中</td><td class="mid">中</td><td class="good">快</td><td class="mid">中高</td><td style="text-align:left">项目制，成长快，出差多</td></tr>
+        <tr><td>B1 · MES 二次开发/接口</td><td class="good">高</td><td class="mid">中</td><td class="mid">中</td><td class="mid">中</td><td class="good">快</td><td class="mid">中</td><td style="text-align:left">最快上车，但别做成纯实施</td></tr>
+        <tr><td>B2 · 医院 HIS 运维/接口</td><td class="good">高</td><td class="good">低</td><td class="bad">中高</td><td class="mid">中</td><td class="good">快</td><td class="mid">中</td><td style="text-align:left">稳定，工资中等，科室沟通多</td></tr>
+        <tr><td>C1 · 信创数据库迁移</td><td class="good">高</td><td class="mid">中</td><td class="mid">中</td><td class="mid">中</td><td class="bad">慢</td><td class="good">高</td><td style="text-align:left">越老越吃香，入门最慢</td></tr>
+        <tr><td>C2 · 系统集成/驻场运维</td><td class="good">高</td><td class="bad">中高</td><td class="mid">中</td><td class="good">多</td><td class="good">快</td><td class="mid">中</td><td style="text-align:left">岗位多，天花板低，容易打杂</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span><b>颜色：</b><span class="good" style="padding:2px 7px;border-radius:5px">绿＝有利</span> <span class="mid" style="padding:2px 7px;border-radius:5px">黄＝中等</span> <span class="bad" style="padding:2px 7px;border-radius:5px">红＝不利</span></span>
+    <span>这张表是相对比较，不是绝对判断；同一岗位在不同企业差异很大。</span>
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>最关键的一刀：</strong>A1 和 A2 都叫“上位机”，但 A1 是产品研发、出差少、写代码多；A2 是项目交付、出差多、现场多。B1 和 B2 都叫“行业信息化”，但 B1 偏开发/接口，B2 偏运维/沟通。C1 和 C2 都叫“信创”，但 C1 是数据库专业岗，C2 是系统集成打杂岗。面试时一定要问清楚：<b>“这个岗位写代码占多少？出差比例多少？是产品研发还是项目交付？客户沟通占多少？”</b>
+  </div>
+</section>
+
+<section id="score">
+  <div class="section-head"><span class="section-num">06</span><h2>评分与推荐：B 最易上车，A 技能延续最好，C 最抗年龄</h2></div>
+  <p class="sub">评分只使用可公开比较的维度，不加入个人偏好：年龄友好 30%、学历友好 15%、经验复用 20%、岗位量 15%、收入/天花板 10%、入行速度 10%。分数 1–5，越高越有利。出差强度、客户接触频率写在正文里，由读者按自己情况自行加减。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:860px">
+      <thead><tr><th style="width:220px">维度（权重）</th><th style="text-align:center">A · 工业软件/上位机</th><th style="text-align:center">B · 行业信息化</th><th style="text-align:center">C · 信创 DB/集成</th><th style="text-align:center">D · 传统企业 IT</th><th style="text-align:center">E · AI 落地</th></tr></thead>
+      <tbody>
+        <tr><td>年龄友好（30%）</td><td style="text-align:center">3.0</td><td style="text-align:center">4.5</td><td style="text-align:center">4.5</td><td style="text-align:center">5.0</td><td style="text-align:center">2.5</td></tr>
+        <tr><td>学历友好（15%）</td><td style="text-align:center">4.0</td><td style="text-align:center">4.0</td><td style="text-align:center">4.0</td><td style="text-align:center">3.0</td><td style="text-align:center">3.0</td></tr>
+        <tr><td>经验复用（20%）</td><td style="text-align:center">5.0</td><td style="text-align:center">4.0</td><td style="text-align:center">3.5</td><td style="text-align:center">3.0</td><td style="text-align:center">4.0</td></tr>
+        <tr><td>岗位量（15%）</td><td style="text-align:center">4.0</td><td style="text-align:center">4.0</td><td style="text-align:center">3.5</td><td style="text-align:center">3.0</td><td style="text-align:center">5.0</td></tr>
+        <tr><td>收入/天花板（10%）</td><td style="text-align:center">4.0</td><td style="text-align:center">3.0</td><td style="text-align:center">3.5</td><td style="text-align:center">2.0</td><td style="text-align:center">4.5</td></tr>
+        <tr><td>入行速度（10%）</td><td style="text-align:center">3.5</td><td style="text-align:center">4.0</td><td style="text-align:center">2.5</td><td style="text-align:center">3.5</td><td style="text-align:center">3.0</td></tr>
+        <tr style="background:#e9eee8"><td style="font-size:14px">加权总分</td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--terra)">3.85</td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--amber)">4.05</td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--teal)">3.78</td><td style="text-align:center;font-size:18px;font-weight:800;color:#7b8b83">3.55</td><td style="text-align:center;font-size:18px;font-weight:800;color:#8d6e63">3.50</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="score-bars">
+    <div class="score-bar"><span class="sb-label">B · 行业信息化</span><div class="sb-track"><div class="sb-fill b"></div></div><span class="sb-num">4.05</span></div>
+    <div class="score-bar"><span class="sb-label">A · 工业软件/上位机</span><div class="sb-track"><div class="sb-fill a"></div></div><span class="sb-num">3.85</span></div>
+    <div class="score-bar"><span class="sb-label">C · 信创 DB/集成</span><div class="sb-track"><div class="sb-fill c"></div></div><span class="sb-num">3.78</span></div>
+    <div class="score-bar"><span class="sb-label">D · 传统企业 IT</span><div class="sb-track"><div class="sb-fill d"></div></div><span class="sb-num">3.55</span></div>
+    <div class="score-bar"><span class="sb-label">E · AI 落地</span><div class="sb-track"><div class="sb-fill e"></div></div><span class="sb-num">3.50</span></div>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>口径说明：</strong>年龄分按公开招聘 JD 的实际口径给，不按“岗位性质应该友好”给。北京的上位机岗位多数写“本科及以上、两年以上非标自动化设备软件开发经验”，部分直接写“35 岁及以下”；标“大专”的多在苏州、昆山、成都等非一线。因此 A 的年龄分下调到 3.0。<br>
+    <strong>结论：</strong>如果目标是 3 个月内上班，B / C2 的公开岗位更多、年龄门槛更松；A 更适合走内推 + 作品 + 行业渠道，而不是公开招聘。C 的年龄/学历最友好，但入门最慢。
+  </div>
+
+  <h3 style="margin-top:30px">怎么读这张表</h3>
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-amber">B 第一</span>
+      <h3>赢在可及性</h3>
+      <p>B 的 4.05 来自岗位多、入行快、年龄相对宽松。它的客户沟通、驻场和偏低工资是真实成本；适合把“先就业”放在第一位的人。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">A 第二</span>
+      <h3>赢在技能延续</h3>
+      <p>A 的 3.85 来自经验复用最高、长期专业价值高；但公开岗位少、年龄卡得紧，需要补 C#/Qt 与工业协议。它更适合作为专精线，而不是唯一投递线。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">C 第三</span>
+      <h3>不是不好，是慢</h3>
+      <p>C 的年龄/学历友好度最高，但入门最慢、驻场多、初级 DBA 岗位少。它适合作为“3–5 年长期线”，不适合作为“3 个月必须上岸”的救命线。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">按目标选，而不是按“哪个最好”选</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:780px">
+      <thead><tr><th style="width:260px">目标 / 条件</th><th>推荐</th><th>理由</th></tr></thead>
+      <tbody>
+        <tr><td>3 个月内必须上班，现金流优先</td><td><b>B</b>（MES/医疗接口/运维，不做纯实施）</td><td>入门最快、岗位多；先上车，再用 12 个月往 A 或 C 转。</td></tr>
+        <tr><td>希望原有开发经验最大化延续</td><td><b>A</b>（优先产品研发岗，其次项目岗）</td><td>经验复用最高、长期专业价值高；但要接受公开岗位少、需要作品和内推。</td></tr>
+        <tr><td>能接受 6–12 个月学习，想长期抗年龄</td><td><b>C</b>（信创 DBA/迁移）</td><td>年龄/学历最友好，越老越吃香；但要接受驻场和慢启动。</td></tr>
+        <tr><td>客户接触/出差承受度低</td><td><b>A1 上位机产品研发</b> 或 <b>D 传统企业 IT</b></td><td>A1 客户接触与出差较低；D 稳定但低薪。B 实施/C 驻场不适合。</td></tr>
+        <tr><td>想先解决“有没有工作”，再谈方向</td><td><b>B → A</b> 或 <b>C2 → C1</b></td><td>先用行业交付/集成运维上车，12 个月内往产品/专业岗转；设 deadline。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>不要因为 AI 热就 all-in AI。</strong>AI 的 3.50 不是“不值得学”，是“不适合当 40 岁的主线”。AI 岗位更年轻、更卡学历、技术迭代更快；真正的优势是“交付经验 + 行业场景”，不是“和 25 岁比谁先学会新框架”。
+  </div>
+
+  <div class="callout">
+    <strong>一种可执行组合：</strong>先投 <b>B1 MES 二次开发/接口</b> 解决现金流；同时用 3 周做一个“设备采集 + 实时曲线 + 报警”的 demo，6 个月内定向投 <b>A1 上位机产品研发</b>；<b>C</b> 只在业余考一个国产库认证、做一份迁移报告，作为 3–5 年长期线。<b>AI</b> 只用来加速 demo 和文档，不单独求职。
+  </div>
+</section>
+
+<section id="route">
+  <div class="section-head"><span class="section-num">07</span><h2>路线：B 上车，A 专精，C 长期</h2></div>
+  <p class="sub">这条路成立，但有前提：B 不是“做一辈子实施”，是“先上车”；A 不是“学完再投”，是“边做 demo 边投”；C 不是“现在 all-in”，是“长期证书线”。每个阶段都有目标和检查点。</p>
+
+  <h3>上车线：B 行业信息化（0–6 个月）</h3>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="wk">0–4 周 · 定向投递</div>
+      <h4>投“开发/接口/运维”，不投“纯实施”</h4>
+      <p>目标公司：MES 厂商、医疗软件厂商、政务信息化集成商、制造企业 IT。岗位关键词：MES 二次开发、接口开发、HIS 运维、数据迁移、实施开发。简历突出接口、SQL、业务配置和交付，不突出单一语言。目标：拿到 3–5 个面试，问清客户沟通/出差比例。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">1–3 个月 · 上车</div>
+      <h4>工资可以阶段性让步，但必须写代码/做接口</h4>
+      <p>优先能写代码、做接口、做数据迁移的岗位；纯配置、纯培训、纯驻场打杂的岗位不要长期做。入职 3 个月内独立交付一个接口/报表/数据迁移模块。目标：从“通用开发”变成“行业系统开发”。</p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">3–6 个月 · 补行业</div>
+      <h4>把行业流程学会，而不是只改配置</h4>
+      <p>MES：工单、工序、报工、追溯、设备状态；医疗：HIS/LIS/PACS、医保、互联互通；政务：审批、数据共享、信创适配。目标：能独立和客户对需求，能判断“这个需求能不能做”。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">专精线：A 工业软件/上位机（3–18 个月，业余 + 定向投）</h3>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="wk">0–3 周 · 第一个 demo</div>
+      <h4>设备采集 + 实时曲线 + 报警</h4>
+      <p>用 C#/WPF 或 Qt 做一个可演示的上位机：Modbus/串口采集、实时曲线、报警、SQLite/MySQL、断线重连、报表。硬件预算 200 元以内；没有硬件就用 Modbus Slave 模拟器。目标：有一个能录 30 秒视频的作品。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">1–3 个月 · 定向投 30 家</div>
+      <h4>走内推和行业渠道，不只走公开招聘</h4>
+      <p>目标公司：工业软件厂商、自动化集成商、设备厂商、制造企业 IT。岗位关键词：上位机、SCADA、设备数据采集、C#/Qt、MES 二次开发。渠道：BOSS、猎聘、公司官网、行业群、招标网中标公司。目标：5–8 个面试，搞清楚“写代码占多少、出差多少”。</p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">3–12 个月 · 上车或转岗</div>
+      <h4>优先产品研发岗；项目岗也可以</h4>
+      <p>入职后 3 个月内独立交付一个模块（采集/报警/报表/接口），把行业术语（点位、I/O、PLC、OPC UA、MES、工单、追溯）学会。目标：简历上有一个“行业项目”，不是“学习项目”。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">12–18 个月 · 选深或选宽</div>
+      <h4>深：工业软件专家；宽：行业解决方案</h4>
+      <p>深：上位机/SCADA/设备数据/工业协议，往 25–35K 走；宽：MES/智能制造/行业解决方案，往 20–30K 走。也可以在这个阶段转 C。<b>deadline：18 个月还没写过生产级设备/行业代码，就换岗。</b></p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">长期线：C 信创数据库/系统集成（6–24 个月，业余）</h3>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="wk">0–3 个月 · 选一个国产库</div>
+      <h4>达梦 / 人大金仓 / OceanBase 三选一</h4>
+      <p>不要三个都学。选一个在本地项目多的（达梦/金仓在政务/金融/医疗多；OceanBase 在金融/互联网多）。学 Linux + SQL + 备份恢复 + 主备 + 迁移。目标：能装、能备、能迁一个 demo 库。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">3–6 个月 · 做一份迁移报告</div>
+      <h4>用“报告 + 脚本”证明会迁移</h4>
+      <p>MySQL → 达梦/金仓：schema、数据、存储过程、函数、兼容性、性能测试、回滚方案；写成 10 页报告 + 脚本放 GitHub。目标：面试时能讲清“迁移的坑”，而不是只说“会 SQL”。</p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">6–12 个月 · 考证 + 投集成商</div>
+      <h4>证书是加分，不是门票</h4>
+      <p>达梦 DCA/DCP、金仓 KCA/KCP、OceanBase OBCA 等（周期/费用以官方为准）。投信创集成商/数据库厂商/驻场运维；岗位关键词：信创数据库、DBA、迁移、系统集成。目标：拿到 1 个 C 线 offer 或至少 3 个面试。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">12–24 个月 · 决定要不要转</div>
+      <h4>只在 B/A 都不顺时，才把 C 变主线</h4>
+      <p>C 是长期线，不是救生艇。如果 B/A 已经上车且成长，C 保持业余；如果 B/A 都没反馈，C 可以变主线，但要接受驻场/慢启动。目标：不要“三条线都学一半”，要有一条能交付。</p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:24px">
+    <strong>三条线最大的陷阱：</strong>同时学 C#、Qt、Java、MES、医疗、达梦、AI，结果每条都只会“Hello World”。选 A 就先把一个 demo 做到能演示；选 B 就先把一个行业接口做到能上线；选 C 就先把一个迁移报告做到能讲。<b>40 岁的竞争力不是“学得多”，是“交付得稳”。</b>
+  </div>
+</section>
+
+<section id="action">
+  <div class="section-head"><span class="section-num">08</span><h2>12 个月行动清单</h2></div>
+  <p class="sub">不要“学好了再找”。边投、边学、边做作品；每一阶段都有可验证的产出。下面把“求职动作”和“学习/作品动作”放在同一张表里，避免顾此失彼。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:920px">
+      <thead><tr><th style="width:150px">时间</th><th>求职动作</th><th>学习 / 作品动作</th></tr></thead>
+      <tbody>
+        <tr><td>第 1 个月</td><td>统计 50 个目标 JD；投 B 线 15 家；准备 3 个面试问答</td><td>C#/WPF 或 Qt 入门；跑通串口/Modbus 采集</td></tr>
+        <tr><td>第 2 个月</td><td>面试/复盘；根据反馈改简历关键词</td><td>完成设备采集 demo（曲线/报警/存储）；写 README</td></tr>
+        <tr style="background:#f7eae4"><td><b>第 3 个月</b><br><span class="row-note">第一次检查点</span></td><td>评估：B 线有无面试/offer？A 线有无回应？</td><td>评估：demo 能否演示？能否讲清技术选型？</td></tr>
+        <tr><td>第 4–6 个月</td><td>B 线上车；或扩大到 A 产品岗 + B 开发/接口岗，目标 30 家</td><td>入职后 3 个月内独立交付一个模块；每周记录行业术语/接口案例</td></tr>
+        <tr><td>第 7–9 个月</td><td>稳定输出；评估是否要转 A/C</td><td>补 SCADA/MES/数据库；做第二个 demo（MES 工单/追溯或医疗接口）</td></tr>
+        <tr><td>第 10–12 个月</td><td>年度复盘：留在 B 深挖，还是转 A 专精/C 长期</td><td>把两个作品整理成作品集；设定 24 个月目标</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card">
+      <span class="tag tag-blue">如果处于全职求职期</span>
+      <h3>一周时间表（示例）</h3>
+      <ul class="mini-list">
+        <li><b>周一–周五上午：</b>投递、面试、复盘 JD 与话术。</li>
+        <li><b>周一–周五下午：</b>2 小时技术学习 + demo 开发。</li>
+        <li><b>周六：</b>整块时间做 demo/写 README/投定向岗；没有 demo 就复盘面试。</li>
+        <li><b>周日：</b>复盘、休息；不要把自己逼到崩溃。</li>
+      </ul>
+      <p class="small">原则：先保证有一条线在投，不要把所有时间压到“学习”上。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">如果 3 个月没有反馈</span>
+      <h3>先上车，别继续“全职学习”</h3>
+      <ul class="mini-list">
+        <li>先找低门槛技术岗：系统集成、运维、医疗实施、MES 运维、测试外包。</li>
+        <li>工资可以低，但必须能写代码/碰系统/学行业；不要做纯桌面运维/纯打杂。</li>
+        <li>上班后每周仍留 5–8 小时做 A 线 demo；不要指望公司系统培养。</li>
+        <li>职业空窗越长，面试解释成本越高；先有收入，再谈方向。</li>
+      </ul>
+      <p class="small">这不是“退而求其次”，是“用工作换行业经验”。</p>
+    </div>
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>每周必须留下的证据：</strong>一个 demo 提交记录、一张界面截图、一段接口/协议调试记录、一次面试复盘、一个行业术语笔记。三个月后，这些东西比“学了三个月”有说服力得多。
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head"><span class="section-num">09</span><h2>技能、作品、证书：用作品抵消年龄和学历</h2></div>
+  <p class="sub">40 岁的破局不是再考一个证，是拿出“能演示、能讲清、能上线”的作品。证书是加分，作品是门票。</p>
+
+  <h3>简历翻译：把“技术标签”换成“能力组合”</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="before-after">
+      <thead><tr><th style="width:34%">常见写法</th><th style="width:40%">建议改成</th><th>对应岗位</th></tr></thead>
+      <tbody>
+        <tr><td>只写某语言 / 某端开发</td><td>系统研发 + 接口 + 数据 + 交付，说明能独立负责一个模块</td><td>A / B / C</td></tr>
+        <tr><td>只写功能清单</td><td>需求拆解 + 技术方案 + 上线 + 稳定性治理 + 结果</td><td>所有</td></tr>
+        <tr><td>只写职级 / 年限</td><td>写“负责/主导/交付”与可验证的结果，不写职级</td><td>所有</td></tr>
+        <tr><td>只有学习项目，没有行业项目</td><td>按目标行业做一个“设备采集/工单追溯/迁移报告”demo，放在项目第一位</td><td>A / B / C</td></tr>
+        <tr><td>有设备通信或接口经验</td><td>写成“设备/系统通信 + 数据链路 + 稳定性”，对应上位机/集成岗</td><td>A · 设备数据</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout amber" style="margin-top:14px">
+    <strong>一个原则：</strong>不要编造行业经验；把“可迁移能力”翻译成对方听得懂的语言，然后用 demo 补上“行业项目”。HR 可以接受“没做过行业”，但不能接受“撒谎”。面试被问“做过工业软件吗”，正确回答是：“没做过产品级的，但我做过接口、数据和设备侧对接类项目，这是我按工业场景做的采集 demo，您可以从这里判断我的迁移速度。”
+  </div>
+
+  <h3 style="margin-top:30px">三条线的最小技能栈</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:820px">
+      <thead><tr><th style="width:120px">线</th><th>必须会</th><th>加分</th><th>先别学</th></tr></thead>
+      <tbody>
+        <tr><td>A · 上位机</td><td>C#（.NET 8）+ WPF 或 Qt；串口/TCP；Modbus RTU/TCP；SQL；多线程；实时曲线/报警/报表</td><td>OPC UA、MQTT、PLC 基础、SCADA/MES、WinCC/组态王</td><td>CUDA、深度学习、复杂图形学</td></tr>
+        <tr><td>B · 行业信息化</td><td>Java 或 C#；Vue/React；SQL；REST/接口；Linux 基础；行业流程</td><td>HL7/FHIR/DICOM（医疗）、ISA-95/MES（制造）、低代码配置</td><td>大而全的微服务/云原生</td></tr>
+        <tr><td>C · 信创 DB</td><td>Linux；SQL；Oracle/MySQL；备份恢复/主备/迁移；国产库（达梦/金仓/OceanBase 选一）</td><td>性能优化、Shell/Python、信创认证、容灾</td><td>三个国产库同时学</td></tr>
+        <tr><td>AI 加分</td><td>Python 基础；Dify/LangChain；RAG；向量库；API 调用</td><td>私有化部署、Agent、提示词工程</td><td>从零训练大模型</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:30px">三个作品，分别对应三条线</h3>
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-terra">作品 01 · A 线</span>
+      <h3>设备采集与监控</h3>
+      <p><b>做什么：</b>C#/WPF 或 Qt；Modbus RTU/TCP 采集温湿度/继电器；实时曲线；报警；SQLite/MySQL；报表；用户权限；断线重连。</p>
+      <p><b>硬件：</b>USB 转 485（约 30–50 元）+ Modbus 温湿度传感器（约 50–100 元）+ 继电器模块（约 30 元），总预算 200 元以内；没有硬件就用 Modbus Slave 模拟器。</p>
+      <p><b>交付：</b>GitHub + README + 3 张截图 + 30 秒演示视频。这是投 A 线最硬的证据。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">作品 02 · B 线</span>
+      <h3>MES 工单/追溯看板</h3>
+      <p><b>做什么：</b>Vue/React + Java/C# + MySQL；工单、扫码、工序、设备状态、追溯、报表；接入作品 01 的数据。</p>
+      <p><b>重点：</b>不是 UI 多漂亮，是“业务闭环”：工单下发 → 扫码开工 → 工序报工 → 质量追溯 → 报表。</p>
+      <p><b>交付：</b>GitHub + 5 页需求/设计/交付文档。证明懂“行业系统”，不是只会写页面。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">作品 03 · C 线</span>
+      <h3>信创数据库迁移报告</h3>
+      <p><b>做什么：</b>MySQL → 达梦/人大金仓；schema、数据、存储过程、函数、兼容性、性能测试、回滚方案。</p>
+      <p><b>重点：</b>写清“迁移的坑”：字符集、数据类型、自增、分页、函数差异、锁、性能退化。</p>
+      <p><b>交付：</b>10 页报告 + 迁移脚本。证明会“迁移”，不是只会“装库”。</p>
+    </div>
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>用 AI 加速，不要用 AI 代替：</strong>可以让 AI 生成界面骨架、协议解析代码、迁移脚本、README、面试题；但必须自己跑通、改错、讲清。面试官一问“为什么这么设计”，AI 代写的代码会立刻露馅。<b>AI 是加速器，不是简历。</b>
+  </div>
+
+  <h3 style="margin-top:30px">证书：只考“能加分”的，不考“安慰剂”</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:820px">
+      <thead><tr><th style="width:200px">证书</th><th>用途</th><th style="width:190px">周期 / 费用（参考）</th><th style="width:100px">优先级</th></tr></thead>
+      <tbody>
+        <tr><td>达梦 DCA/DCP、金仓 KCA/KCP、OceanBase OBCA</td><td>C 线加分；证明系统学过国产库</td><td>1–3 个月；2000–6000 元（以官方为准）</td><td>★★★★（C 线）</td></tr>
+        <tr><td>软考（系统集成项目管理工程师 / 信息系统项目管理师）</td><td>国企/政务/职称加分；偏项目管理</td><td>3–6 个月；报名费低</td><td>★★★（如需国企/政务）</td></tr>
+        <tr><td>CISP / 等保测评师</td><td>安全合规线；不是 A/B 主线</td><td>3–6 个月；费用较高</td><td>★★（安全线）</td></tr>
+        <tr><td>PMP</td><td>项目管理；对纯技术岗加分有限</td><td>3–6 个月；费用高</td><td>★（不急着考）</td></tr>
+        <tr><td>“包就业”培训班证书</td><td>基本没用；不要贷款</td><td>—</td><td>不碰</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small-note">证书费用/周期为市场参考，以官方/机构实际报价为准；不要买证、不要相信“包过”。证书只证明学过，作品和项目才决定能不能上岗。</p>
+
+  <h3 style="margin-top:30px">学习资源与顺序</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-blue">资源</span>
+      <h3>看什么、跟谁学</h3>
+      <ul class="mini-list">
+        <li><b>C#/.NET：</b>Microsoft Learn、.NET 8 官方文档；先学控制台/类/异步/串口/TCP，再学 WPF。</li>
+        <li><b>Qt：</b>Qt 6 官方文档、Qt Widgets/QML 示例；如果更熟 C++ 再选 Qt，否则 C#/WPF 更快。</li>
+        <li><b>工业协议：</b>Modbus 规范、OPC UA 官方文档、MQTT；用 Modbus Slave/模拟器练习。</li>
+        <li><b>SCADA/MES：</b>开源 OpenSCADA、SharpSCADA、IoTGateway、ThingsBoard；商业组态王/力控/亚控文档。</li>
+        <li><b>行业：</b>医疗 HL7/FHIR/DICOM；制造 ISA-95/MES 白皮书；信创达梦/金仓/OceanBase 官方文档。</li>
+        <li><b>AI：</b>Dify、LangChain、RAG 教程；做一个“设备故障知识库”demo 即可。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">顺序</span>
+      <h3>从能跑，到能演示，到能上线</h3>
+      <ul class="mini-list">
+        <li>第 1 周：C# 基础 + 串口/TCP 收发；做一个控制台读取 Modbus 寄存器。</li>
+        <li>第 2 周：WPF/Qt 界面 + 实时曲线 + 报警；数据存 SQLite。</li>
+        <li>第 3 周：断线重连、日志、配置、报表；打包成 exe；写 README。</li>
+        <li>第 4 周：录 30 秒演示视频；把项目写进简历第一行。</li>
+        <li>第 5–6 周：MES 工单/追溯看板；接入第一个 demo 的数据。</li>
+        <li>第 7–8 周：信创迁移报告（可选，C 线）。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="beijing">
+  <div class="section-head"><span class="section-num">10</span><h2>北京岗位地图：去哪投、怎么投</h2></div>
+  <p class="sub">北京城区大厂多，但年龄歧视也重；真正的机会在“行业软件/工业软件/集成商/医院/政务”这些不那么显眼的地方。通勤/驻场/出差是比“学不学得会”更现实的筛选条件。</p>
+
+  <div class="grid g3">
+    <div class="card">
+      <span class="tag tag-blue">海淀 · 上地/西二旗</span>
+      <h3>工业软件 / 自动化 / 能源</h3>
+      <p>工业软件厂商、自动化集成商、能源/电力信息化、AI 公司集中；A 线岗位多，但互联网年龄歧视也重，投递时要认准“工业软件/行业软件”而不是“互联网大厂”。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">亦庄 · 经开区</span>
+      <h3>智能制造 / 汽车电子 / 装备</h3>
+      <p>智能制造、汽车电子、装备、生物医药；工厂 IT、MES、上位机、设备数据岗位多；通勤可从市区/通州/大兴考虑。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-blue">昌平 · 未来科学城</span>
+      <h3>能源 / 制造 / 软件园</h3>
+      <p>能源、制造、软件园；系统集成/运维/工业软件岗位；部分岗位驻场，通勤时间长。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">朝阳 · 望京/酒仙桥</span>
+      <h3>医疗信息化 / 外企 / 集成商</h3>
+      <p>医疗软件、外企、系统集成商；HIS/医疗接口/运维岗位多；外企年龄相对宽松，但英语是门槛。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">西城 / 丰台</span>
+      <h3>政务 / 金融 / 信创集成</h3>
+      <p>政务、金融、信创集成商、驻场运维；C 线岗位多；很多是项目制/外包，问清编制/社保/驻场地点。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-gray">廊坊 / 固安 / 天津</span>
+      <h3>制造 / 数据中心 / 信创</h3>
+      <p>工厂、数据中心、信创项目；驻场多、生活成本低；通勤与生活安排需纳入评估。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">投递渠道</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:760px">
+      <thead><tr><th style="width:180px">渠道</th><th>适合</th><th>注意</th></tr></thead>
+      <tbody>
+        <tr><td>BOSS 直聘</td><td>工业软件、MES、医疗信息化、集成商</td><td>回复快；问清写代码比例/出差/社保</td></tr>
+        <tr><td>猎聘</td><td>15K+ 工业软件/信创/医疗</td><td>猎头多；简历要按岗位改</td></tr>
+        <tr><td>智联 / 前程无忧</td><td>传统企业、国企、医院、集成商</td><td>流程慢；适合稳岗</td></tr>
+        <tr><td>公司官网</td><td>工业软件厂商、医疗软件厂商、信创厂商</td><td>岗位更新慢但真实；可直接投 HR</td></tr>
+        <tr><td>前同事 / 行业群</td><td>内推、行业信息</td><td>40 岁最有效；不要只在求人时出现</td></tr>
+        <tr><td>招标网 / 政府采购</td><td>信创、医疗、政务项目</td><td>找中标集成商，反向投递</td></tr>
+        <tr><td>医院 / 学校官网</td><td>信息科、外包运维</td><td>编制少；外包/驻场更现实</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout" style="margin-top:22px">
+    <strong>没有行业人脉怎么入口：</strong>如果没有行业人脉，别硬求“介绍工作”，改用“请教行业”：找做工业软件/MES/医疗/信创的从业者、行业群、招标网中标公司、面试官，问三个问题——招人最卡什么？这个岗位一天干什么？这类背景适合从哪个岗切？问完发一份 demo/简历，不求当场答应。40 岁最有效的入口是“作品 + 定向请教”，不是海投。
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>40 岁投递的正确姿势：</strong>不要海投 500 家，投 30–50 家“对的”：公司做工业软件/MES/医疗/信创，岗位写代码/碰系统，JD 写“本科及以上”而不是“全日制本科”，年龄没写死或能内推。每投一家，改一版简历关键词；每面一家，记录三个问题。海投只会增加焦虑。
+  </div>
+</section>
+
+<section id="pitfall">
+  <div class="section-head"><span class="section-num">11</span><h2>避坑清单</h2></div>
+  <p class="sub">这些坑，每一个都有人踩过。提前知道，能省下几个月和几万块。</p>
+
+  <ul class="checklist red">
+    <li><b>把 AI 当救生艇：</b>AI 岗位更年轻、更卡学历、技术迭代更快；40 岁从零冲算法，胜率很低。AI 只做加分项。</li>
+    <li><b>只投单一通用开发方向：</b>可以投，但不能唯一；通用开发/移动端是年龄歧视最重的细分之一。</li>
+    <li><b>纯实施顾问：</b>客户沟通多、出差多，而且产品标准化/云化/低代码正在替代纯实施；要投“开发/接口/运维/数据”。</li>
+    <li><b>为了“计算机”标签去选桌面运维/Helpdesk：</b>年龄友好，但低薪、打杂、天花板低；只能当现金流，不能当长期。</li>
+    <li><b>忽略学历分层：</b>“本科及以上”是一道门，“全日制本科/第一学历”是另一道门；不要把简历浪费在明确卡后两道的岗位上。</li>
+    <li><b>只学不练：</b>上位机/数据库不是看书能会的；没有 demo/真机/迁移报告，学完就忘。</li>
+    <li><b>三条线同时学：</b>C#、Qt、Java、MES、医疗、达梦、AI 一起学，结果每条都只会 Hello World。先选一条做到能演示。</li>
+    <li><b>相信“包就业”培训班：</b>不碰；不要签贷款协议；先看是否有真机/项目/可核验就业数据。</li>
+    <li><b>只看工资：</b>第一份工作看能不能写代码/碰设备/学行业；工资低一点可以接受，但要有成长路径。</li>
+    <li><b>和 25 岁比加班：</b>比不过，也不应该比；用“交付确定性/故障处理/行业知识/带团队”竞争。</li>
+    <li><b>回避年龄与职业空窗：</b>面试官大概率会问；准备一个简短、真实的解释，再用作品和交付能力转移话题。</li>
+    <li><b>忽略体力与生活成本：</b>出差/驻场/倒班要提前评估；40 岁的体力和生活成本是真实约束。</li>
+    <li><b>把所有希望押在一个 offer：</b>并行投 A/B/C，拿到 offer 再比较；不要“等这家通知”等到现金流断裂。</li>
+    <li><b>用“稳定”骗自己：</b>低薪打杂的稳定，三年后会更难；稳定必须是“经验在积累”的稳定。</li>
+  </ul>
+</section>
+
+<section id="verify">
+  <div class="section-head"><span class="section-num">12</span><h2>待验证事项与决策门</h2></div>
+  <p class="sub">这份文档不是“已确定”，是“目前最好的假设”。下面这些必须用真实信息验证；验证完再拍板。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:880px">
+      <thead><tr><th style="width:200px">待验证</th><th>怎么验证</th><th style="width:280px">影响</th></tr></thead>
+      <tbody>
+        <tr><td>北京 A/B/C 岗位量</td><td>BOSS/猎聘搜两周，统计 50 个 JD 的年龄/学历/经验/出差/写代码比例</td><td>决定先投哪条线、是否接受郊区/驻场</td></tr>
+        <tr><td>C#/Qt 的学习曲线</td><td>2 周内做一个“串口/Modbus + 曲线 + 报警”的 demo</td><td>决定 A 线是否现实；做不出来就先走 B</td></tr>
+        <tr><td>工业软件公司是否卡第一学历</td><td>投 20 家，记录“已读/回复/面试”；问 HR“本科学历是否符合”</td><td>决定简历是否要强调“本科（含非全日制）”</td></tr>
+        <tr><td>MES/医疗真实客户接触</td><td>面 5 家，问“客户沟通占多少、出差多少、写代码占多少”</td><td>决定 B 线的工作方式是否可接受</td></tr>
+        <tr><td>信创证书的价值</td><td>问 3 家集成商/厂商：招人是否看达梦/金仓/OceanBase 认证</td><td>决定 C 线是否值得投入 6–12 个月</td></tr>
+        <tr><td>真实薪资</td><td>面 3–5 家，问底薪/项目奖金/出差补贴/社保</td><td>决定现金流是否够、是否值得降薪</td></tr>
+              </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:30px">决策门：到时间用反馈做决定</h3>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="wk">第 3 个月 · 第一次决策门</div>
+      <h4>B 线有没有面试/offer？A 线有没有回应？</h4>
+      <p>如果 B 线有 offer，先上车，A 线保留为专精线；如果 B 线没反馈、A 线有面试/offer，就加码 A；如果两边都没有，扩大投递到 C/D，并接受降薪/郊区/驻场，先解决现金流。不要继续“全职学习”。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">6 个月</div>
+      <h4>有没有上车？</h4>
+      <p>没有就换入口/换渠道：从 A 产品岗换到 B 开发/接口岗，从工业软件换到医疗/信创，从海投换到内推/上门。不要一直等“合适的岗位”。</p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">12 个月</div>
+      <h4>有没有写过生产级模块？</h4>
+      <p>如果还在纯实施/纯运维/纯打杂，换岗；如果已经独立交付一个模块，继续深挖。把“会什么”写成清单，不要凭感觉。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">24 个月</div>
+      <h4>有没有从“交付”走到“产品/专业”？</h4>
+      <p>从项目交付走到产品研发，或从系统集成走到 DBA/专业岗；如果还在打杂，跳槽。不要用“稳定”骗自己。</p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>决策门不是“到时间自动转行”，是“到时间用真实反馈做决定”。</strong>如果 B 线有 offer，先上车；A 线可以保留为专精线。如果 B 线没有反馈、A 线也有面试，就加码 A。最怕的是三条线都只学不投、只等不做。
+  </div>
+</section>
+
+<section id="note">
+  <div class="section-head"><span class="section-num">13</span><h2>说明与来源</h2></div>
+  <p class="sub">这份文档是 2026-10-27 的调研整理，不是职业承诺。下面说明口径、边界和下一步。</p>
+
+  <div class="grid g2">
+    <div class="card">
+      <span class="tag tag-gray">口径</span>
+      <h3>收入、周期、费用</h3>
+      <p>收入为税前月薪综合估计（北京/一线），含项目奖金/出差补贴，波动很大；请以实际面试为准。证书周期/费用以官方/机构实际报价为准。学习周期是“能上岗/能独立”的估计，因人而异。</p>
+      <p>本文基于公开招聘信息、2026 春招/国考公开报道、行业报告与从业者口径；不是职业承诺，也不构成投资建议。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-gray">边界</span>
+      <h3>没有验证的，不要当确定</h3>
+      <p>北京 A/B/C 岗位量、工业软件是否卡第一学历、MES/医疗真实客户接触、信创证书价值、真实薪资，都还没验证（见第 12 节）。拍板前，至少完成“50 个 JD 统计 + 5 家面试 + 1 个 demo”。</p>
+      <p>3D 视频包装不参与本文排序；工业自动化另见《非计算机方向转行调研》；本文只讨论计算机行业内部路径，不构成职业承诺。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">关键来源</h3>
+  <ul class="source-list">
+    <li>2026 国考年龄放宽至 38 岁、应届硕博 43 岁；安徽、湖北、湖南等省考跟进：<a href="https://app.xinhuanet.com/news/article.html?articleId=49204b40085e244402f62e8fdce0e057" target="_blank" rel="noopener">新华网报道</a>、<a href="https://m.bjnews.com.cn/detail/1760278246129813.html" target="_blank" rel="noopener">新京报报道</a>。</li>
+    <li>脉脉 2026 春招“去初级化”：要求 3 年以上经验岗位超七成、1 年以内新人岗缩 20%；智联 AI 工程师起薪约 17,038 元/月：<a href="https://www.tmtpost.com/8044718.html" target="_blank" rel="noopener">钛媒体</a>。</li>
+    <li>DBA 5–10 年薪资：66.6% 岗位 15–30K/月；大专以上学历要求占比 97.59%：<a href="https://m.jobui.com/salary/quanguo-gaojidbashujukugongchengshi/exp3/" target="_blank" rel="noopener">职友集</a>、<a href="https://www.qcc.com/jobdetail/c4230796ceeaf5a5c9b63d86d63ee901.html" target="_blank" rel="noopener">企查查招聘</a>。</li>
+    <li>医疗 HIS 实施 6–13K；医院信息科 IT 15–25K：<a href="https://www.zhipin.com/zhaopin/065dcd299a2538891nZ52NS6Fw~~/" target="_blank" rel="noopener">BOSS 直聘医疗 HIS 岗</a>、<a href="https://www.liepin.com/zpyyxxgcsx9z1/" target="_blank" rel="noopener">猎聘医院信息工程师</a>。</li>
+    <li>工业软件/智能制造人才缺口与薪资：<a href="https://www.163.com/dy/article/L9PBE6E905561NML.html" target="_blank" rel="noopener">网易/招聘前线</a>、<a href="https://www.iyiou.com/analysis/202602271122699" target="_blank" rel="noopener">亿欧 MES 报告解读</a>。</li>
+    <li>信创从“建议替换”转为“强制替换”，国测四期名单含达梦、金仓等：<a href="https://cloud.tencent.com/developer/article/2710588" target="_blank" rel="noopener">腾讯云开发者社区</a>、<a href="https://www.changeway.com.cn/question/9421.html" target="_blank" rel="noopener">信创人才机遇</a>。</li>
+    <li>全球网络安全人才缺口 2025 年约 480 万，安全运营岗占比最高：<a href="http://ahdbcp.com/article/868.html" target="_blank" rel="noopener">等保资讯</a>；网络安全年龄讨论：<a href="https://www.oldboyedu.com/blog/7247.html" target="_blank" rel="noopener">老男孩教育</a>。</li>
+    <li>上位机/工业软件薪资样本：<a href="https://www.liepin.com/job/1985547277.shtml" target="_blank" rel="noopener">猎聘上位机岗</a>、<a href="https://m.jobui.com/company/16935930/salary/j/c%23shangweijikaifagongchengshi/" target="_blank" rel="noopener">职友集 C# 上位机</a>。</li>
+  </ul>
+  <p class="small-note">以上为公开信息与媒体/招聘口径，部分数据样本偏头部或范围较宽（如“450 万缺口”“AI 平均月薪”），不能当作单一岗位的确定值；具体以实际面试和官方公告为准。</p>
+
+  <h3 style="margin-top:30px">下一步：今天就能做的 3 件事</h3>
+  <div class="final-actions">
+    <div class="final-action">
+      <div class="n">01 · 今天</div>
+      <h4>先统计 JD，再改简历</h4>
+      <p>统计 20 个目标岗位的年龄/学历/经验要求，确认哪些岗位真的接受 40 岁；再按岗位关键词改简历。</p>
+    </div>
+    <div class="final-action">
+      <div class="n">02 · 本周</div>
+      <h4>做第一个 demo</h4>
+      <p>C#/WPF 或 Qt：串口/Modbus 采集 + 实时曲线 + 报警 + SQLite；先跑通，再谈漂亮。预算 200 元以内。</p>
+    </div>
+    <div class="final-action">
+      <div class="n">03 · 第 3 个月</div>
+      <h4>做第一次复盘</h4>
+      <p>B 线有无 offer？A 线有无面试？demo 能否演示？用真实反馈决定加码还是先上车，不靠感觉。</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:22px">
+    <strong>最后一句：</strong>计算机行业不会因为 40 岁就关门，但会把门换成窄门；窄门后面是“经验复利”的岗位。要做的不是证明自己还能熬夜，而是证明能让系统不出事、让项目交付、让客户/合规放心。<b>先上车，再换座；先有作品，再谈年龄。</b>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>计算机行业 · 40 岁岗位调研 · 2026-10 · 公开版 · 客观调研</p>
+  <p>本文不构成职业/投资建议；收入与周期为综合估计，请以实际面试和官方公告为准。</p>
+</footer>
+
+</body>
+</html>

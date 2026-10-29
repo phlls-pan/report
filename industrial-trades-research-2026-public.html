@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>计算机专业 40 岁转向技术手艺 · 公开版 · 2026</title>
+<style>
+:root{
+  --paper:#f4f0e7;--card:#fffdf7;--ink:#1d1d1b;--muted:#6f6a60;--line:#ded7c8;
+  --green:#1f4d3f;--green-2:#2f6b57;--terra:#c25b3a;--amber:#c9963c;--sand:#e9e2d3;
+  --shadow:0 10px 30px rgba(31,45,38,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+h1,h2,h3,.serif{font-family:"Songti SC","Noto Serif SC","Source Han Serif SC",serif}
+a{color:var(--green-2)}
+.hero{background:var(--green);color:#f7f2e6;padding:76px 24px 58px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px),
+  radial-gradient(900px 420px at 78% 0%,rgba(201,150,60,.22),transparent 60%),
+  radial-gradient(700px 500px at 0% 100%,rgba(255,255,255,.08),transparent 60%);
+  background-size:42px 42px,42px 42px,auto,auto;pointer-events:none}
+.hero-inner{max-width:1120px;margin:0 auto;position:relative}
+.kicker{letter-spacing:.18em;font-size:11.5px;text-transform:uppercase;color:#c9d8cf}
+.hero h1{font-size:clamp(38px,6vw,72px);line-height:1.08;margin:18px 0 18px;font-weight:700;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:#e6b96a}
+.lede{font-size:clamp(15px,1.8vw,18px);max-width:880px;color:#dfe8e2;margin:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 13px;font-size:12.5px;color:#e8efe9;white-space:nowrap}
+.chip.hot{border-color:#e6b96a;color:#ffe0a3}
+.stamp{position:absolute;right:24px;top:26px;border:2px solid rgba(230,185,106,.7);color:#e6b96a;padding:9px 13px;border-radius:8px;transform:rotate(6deg);font-size:11px;letter-spacing:.16em;font-weight:800;opacity:.92;line-height:1.5;text-align:center}
+@media(max-width:640px){.stamp{display:none}}
+.toc{position:sticky;top:0;z-index:30;background:rgba(244,240,231,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.toc-inner{max-width:1120px;margin:0 auto;display:flex;gap:18px;overflow-x:auto;padding:12px 24px;font-size:13px;scrollbar-width:none}
+.toc-inner::-webkit-scrollbar{display:none}
+.toc a{color:var(--muted);text-decoration:none;white-space:nowrap;padding:2px 0;border-bottom:1px solid transparent}
+.toc a:hover{color:var(--green);border-bottom-color:var(--green)}
+.print-btn{margin-left:auto;border:1px solid var(--green);background:transparent;color:var(--green);border-radius:999px;padding:7px 14px;font-size:12px;cursor:pointer;white-space:nowrap}
+.print-btn:hover{background:var(--green);color:#fff}
+main{max-width:1120px;margin:0 auto;padding:0 24px 80px}
+section{padding:62px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+.section-head{display:flex;align-items:baseline;gap:16px;margin-bottom:8px}
+.section-num{font-size:clamp(28px,4vw,46px);color:var(--terra);font-family:"Songti SC","Noto Serif SC",serif;line-height:1}
+h2{font-size:clamp(26px,3.4vw,40px);line-height:1.2;margin:0;letter-spacing:-.01em}
+h3{line-height:1.35}
+.sub{color:var(--muted);max-width:880px;margin:10px 0 28px;font-size:15px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 8px;font-size:20px;line-height:1.35}
+.card p{margin:8px 0;font-size:14px;color:#3a3a35}
+.card .small{font-size:12.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:999px;margin-bottom:10px}
+.tag-green{background:#d9eadf;color:#174b37}
+.tag-terra{background:#f6ddd2;color:#8a3b1f}
+.tag-amber{background:#f4e8c8;color:#6b4d16}
+.tag-gray{background:#eceae3;color:#5d5a52}
+.callout{background:#f0ece1;border-left:4px solid var(--green);padding:18px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px}
+.callout.warn{border-left-color:var(--terra);background:#f7eae4}
+.callout.amber{border-left-color:var(--amber);background:#f7f0dc}
+.callout strong{color:var(--green)}
+.callout.warn strong{color:#8a3b1f}
+.callout.amber strong{color:#6b4d16}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0 4px}
+@media(max-width:760px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.kpi .num{font-family:"Songti SC","Noto Serif SC",serif;font-size:30px;line-height:1.1;color:var(--green);font-weight:700}
+.kpi .lbl{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:12.5px}
+thead th{position:sticky;top:0;background:#223f35;color:#f6f1e5;padding:10px 8px;text-align:center;font-weight:600;white-space:nowrap;z-index:3}
+tbody td{padding:9px 8px;border-bottom:1px solid #eee7d9;text-align:center;vertical-align:middle}
+tbody tr:hover{background:#faf6ec}
+td.name{text-align:left;font-weight:600;min-width:190px;position:sticky;left:0;background:var(--card);z-index:2}
+tbody tr:hover td.name{background:#faf6ec}
+.row-note{display:block;font-weight:400;font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.45;max-width:250px;white-space:normal}
+.group td{background:#e9e2d3;font-weight:800;color:var(--green);text-align:left;padding:10px 12px;font-size:13px;letter-spacing:.04em;position:static}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:11.5px;color:var(--muted);margin-top:10px}
+.legend b{color:var(--ink)}
+.compare{width:100%;min-width:860px;font-size:12.8px;border-collapse:collapse}
+.compare th{background:#223f35;color:#f6f1e5;padding:10px 9px;text-align:left;font-weight:600;position:static}
+.compare td{padding:10px 9px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+.compare tr:nth-child(even) td{background:#faf6ec}
+.compare td:first-child{font-weight:700;white-space:nowrap;color:var(--green)}
+.hm{width:100%;min-width:820px;font-size:12.5px}
+.hm th{background:#223f35;color:#f6f1e5;padding:10px 7px;text-align:center;font-weight:600;white-space:nowrap}
+.hm td{padding:10px 7px;border-bottom:1px solid #eee7d9;text-align:center;vertical-align:middle}
+.hm td:first-child{text-align:left;font-weight:700;white-space:nowrap}
+.good{background:#d9eadf;color:#174b37;font-weight:800}
+.mid{background:#f4e8c8;color:#6b4d16;font-weight:800}
+.bad{background:#f6ddd2;color:#8a3b1f;font-weight:800}
+.exec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:22px 0}
+@media(max-width:820px){.exec-grid{grid-template-columns:1fr}}
+.exec{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.exec::after{content:attr(data-n);position:absolute;right:14px;top:0;font-family:"Songti SC","Noto Serif SC",serif;font-size:72px;line-height:1;color:rgba(31,77,63,.07);font-weight:700}
+.exec h3{font-size:23px;margin:0 0 2px;position:relative}
+.exec .role{font-size:12px;letter-spacing:.06em;color:var(--terra);font-weight:800;margin-bottom:10px;position:relative}
+.exec p{font-size:13.5px;margin:7px 0;color:#3a3a35;position:relative}
+.exec .verdict{font-size:12.5px;background:#faf6ec;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:12px;position:relative}
+.score-bars{margin:18px 0 4px}
+.score-bar{display:grid;grid-template-columns:190px 1fr 46px;gap:12px;align-items:center;margin:10px 0;font-size:13px}
+@media(max-width:640px){.score-bar{grid-template-columns:120px 1fr 40px;font-size:12px}}
+.sb-label{font-weight:700;color:var(--green)}
+.sb-track{height:16px;background:#e9e2d3;border-radius:999px;overflow:hidden}
+.sb-fill{height:100%;border-radius:999px}
+.sb-fill.a{background:var(--terra);width:67%}
+.sb-fill.b{background:var(--amber);width:72%}
+.sb-fill.c{background:var(--green-2);width:83%}
+.sb-num{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+.deep-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow);margin:18px 0}
+.deep-card .num{font-size:11px;letter-spacing:.12em;color:var(--terra);font-weight:800;margin-bottom:6px}
+.deep-card h3{font-size:23px;margin:0 0 2px}
+.deep-card .role{font-size:12.5px;color:var(--muted);margin-bottom:10px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.flow-step{flex:1 1 170px;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px;position:relative;box-shadow:var(--shadow)}
+.flow-step .n{font-size:10px;letter-spacing:.1em;color:var(--terra);font-weight:800}
+.flow-step h4{margin:3px 0 4px;font-size:14px;color:var(--green)}
+.flow-step p{margin:0;font-size:12px;color:var(--muted);line-height:1.6}
+.timeline{border-left:2px solid var(--line);margin:18px 0 0 8px;padding-left:22px}
+.tl-item{position:relative;padding:0 0 22px}
+.tl-item::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--green);border:3px solid var(--paper)}
+.tl-item.alt::before{background:var(--terra)}
+.tl-item .wk{font-weight:800;color:var(--terra);font-size:12px;letter-spacing:.04em}
+.tl-item h4{margin:2px 0 4px;font-size:15px}
+.tl-item p{margin:0;font-size:13px;color:#3a3a35}
+.mini-list{margin:6px 0 0;padding-left:18px;font-size:13px;color:#3a3a35;line-height:1.7}
+.mini-list li{margin:2px 0}
+.checklist{list-style:none;padding:0;margin:10px 0}
+.checklist li{padding:9px 0 9px 28px;border-bottom:1px dashed var(--line);position:relative;font-size:13.2px;color:#3a3a35}
+.checklist li::before{content:"✓";position:absolute;left:0;color:var(--green-2);font-weight:800}
+.checklist.red li::before{content:"!";color:var(--terra);font-weight:800}
+.script-box{background:#faf6ec;border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:0 12px 12px 0;padding:16px 18px;margin:12px 0;font-size:13.2px;color:#3a3a35}
+.script-box .who{font-size:10.5px;letter-spacing:.1em;color:var(--terra);font-weight:800;margin-bottom:5px}
+.script-box p{margin:0}
+.q-list{counter-reset:q;list-style:none;padding:0;margin:12px 0}
+.q-list li{counter-increment:q;position:relative;padding:10px 0 10px 38px;border-bottom:1px dashed var(--line);font-size:13.2px;color:#3a3a35}
+.q-list li::before{content:counter(q);position:absolute;left:0;top:9px;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.day-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.day-card h3{font-size:18px;margin:0 0 6px}
+.day-card .day-list{list-style:none;padding:0;margin:8px 0 0}
+.day-card .day-list li{font-size:12.5px;color:#3a3a35;padding:4px 0 4px 0;border-bottom:1px dashed #eee7d9;line-height:1.6}
+.day-card .day-list li:last-child{border-bottom:0}
+.day-card .day-list b{color:var(--terra);font-variant-numeric:tabular-nums;margin-right:6px}
+.final-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+@media(max-width:760px){.final-actions{grid-template-columns:1fr}}
+.final-action{background:#223f35;color:#e8efe9;border-radius:14px;padding:18px}
+.final-action .n{font-size:10px;letter-spacing:.14em;color:#e6b96a;font-weight:800}
+.final-action h4{margin:4px 0 4px;font-size:15px;color:#fff}
+.final-action p{margin:0;font-size:12.5px;color:#cfdbd4;line-height:1.65}
+.small-note{font-size:11.5px;color:var(--muted);margin-top:8px}
+footer{max-width:1120px;margin:0 auto;padding:30px 24px 60px;color:var(--muted);font-size:12px}
+@media print{
+  .toc,.print-btn{display:none}
+  body{background:#fff}
+  .hero{padding:30px 20px}
+  section{padding:26px 0;break-inside:avoid}
+  .deep-card,.card,.kpi,.flow-step,.day-card,.exec,.final-action{break-inside:avoid;box-shadow:none}
+  table{min-width:0;font-size:10px}
+  .compare,.hm{min-width:0}
+  .row-note{max-width:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="stamp">公开版<br>客观调研</div>
+    <div class="kicker">Industrial automation · Career research · 2026</div>
+    <h1>计算机专业 40 岁<br><em>转向非计算机技术手艺</em></h1>
+    <p class="lede">把工业机器人、工控板级维修、PLC/电气自动化三条技术手艺拆开对比：门槛、学习周期、收入曲线、出差强度、年龄友好度、岗位量。结论是三条线不是三选一——C 适合做入口，B 适合做长期专精，A 适合做第二技能；但排序会随读者对出差、收入、体力的取舍而变，本文只提供可比较的事实。</p>
+    <div class="hero-meta">
+      <span class="chip">3 条主路 + 45 类手艺</span>
+      <span class="chip">客观评分：C 4.15 / B 3.60 / A 3.33</span>
+      <span class="chip">C→A 12–24 个月</span>
+      <span class="chip">画像：40 岁 / 计算机软件专业</span>
+      <span class="chip">2026-10</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#conclusion">00 一页结论</a>
+    <a href="#premise">01 研究对象与口径</a>
+    <a href="#map">02 手艺全景</a>
+    <a href="#compare">03 A/B/C 对比</a>
+    <a href="#six">04 六种具体活</a>
+    <a href="#score">05 评分与推荐</a>
+    <a href="#route">06 C→A 路线</a>
+    <a href="#friend">07 入行渠道</a>
+    <a href="#action">08 12 个月行动</a>
+    <a href="#cert">09 证书·工具·学习</a>
+    <a href="#beijing">10 北京与京津冀</a>
+    <a href="#pitfall">11 避坑清单</a>
+    <a href="#verify">12 待验证与决策门</a>
+    <a href="#note">13 说明与来源</a>
+    <button class="print-btn" onclick="window.print()">打印 / 存 PDF</button>
+  </div>
+</nav>
+
+<main>
+
+<section id="conclusion">
+  <div class="section-head"><span class="section-num">00</span><h2>一页结论</h2></div>
+  <p class="sub">如果今天只读一页，读这一页。下面是排序、理由和 30 秒行动版；具体拆解在后面。</p>
+
+  <div class="callout">
+    <strong>先给结论：</strong>如果目标只是尽快重新拿到一份技术岗收入，<b>C（PLC / 电气自动化）</b>的入口最宽、最快；如果更在意工作环境稳定、少见客户、手艺随年龄增值，<b>B（工控 / 板级维修）</b>是长期形态最好的一条，但入口最窄，最常见的是卡在“找不到学徒位置”；如果愿意用出差和现场强度换更高的收入上限，走 <b>C→A（工业机器人）</b>，并且必须设 12–24 个月转岗 deadline。客观上看，三条线不是三选一，而是 <b>C 入口 + B 长期 + A 加分</b>；哪一条排第一，取决于读者把出差、收入、体力、稳定性各放多少权重。
+  </div>
+
+  <div class="exec-grid">
+    <div class="exec" data-n="C">
+      <div class="role">入口 · 最快上车</div>
+      <h3>C · PLC / 电气自动化</h3>
+      <p>就业面最宽、入门最快、能最快摸到真机。集成商、非标设备、工厂维护、物业电气都要人。</p>
+      <p><b>代价：</b>集成商出差多、现场苦、年龄偏紧，最容易被困在“只接线、不编程”。</p>
+      <div class="verdict">适合：想最快上岗、能接受现场、把 C 当跳板的人。</div>
+    </div>
+    <div class="exec" data-n="B">
+      <div class="role">长期 · 环境稳定</div>
+      <h3>B · 工控 / 板级维修</h3>
+      <p>维修台作业、出差少、客户接触少，变频器、伺服、PLC、电源、板级故障越修越值钱。</p>
+      <p><b>代价：</b>学徒机会少、电子基础难、前 1–2 年收入低，资料靠一点点攒。</p>
+      <div class="verdict">适合：坐得住、喜欢电子、想要一门可长期积累的手艺；但入口依赖师傅或维修店。</div>
+    </div>
+    <div class="exec" data-n="A">
+      <div class="role">第二技能 · 高天花板</div>
+      <h3>A · 工业机器人</h3>
+      <p>调试/集成收入高、天花板高；维修/维保更年龄友好；厂内维护稳定。</p>
+      <p><b>代价：</b>调试出差多、油污、节拍压力、安全风险；调试岗年龄偏紧。</p>
+      <div class="verdict">适合：能出差、想搏高薪、愿意在 C 之后转的人；不适合作为第一站。</div>
+    </div>
+  </div>
+
+  <div class="callout amber">
+    <strong>30 秒行动版：</strong>先考低压电工证 → 找 C 入口上车（电气装配 / 售后助理 / 维修学徒 / 厂内维护）→ 3–6 个月转 PLC 调试 → 6–12 个月靠近机器人 → 12–24 个月转 A。B 作为长期备选，入口靠师傅和维修店。做取舍时看三个信号：能不能接受常年出差、能不能接受前 1–2 年降薪、能不能接受倒班与现场环境。
+  </div>
+
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card">
+      <span class="tag tag-green">记住 01</span>
+      <h3>计算机背景是加速器，不是行业经验</h3>
+      <p>软件开发出身的人学 PLC、看协议、写脚本、查手册会更快，但<b>不能替代真机</b>。工业自动化认的是：证、手、现场故障库。计算机专业在简历上的作用是“学得快”，不是“懂这行”。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">记住 02</span>
+      <h3>C 只是跳板，不是终点</h3>
+      <p>进 C 之后，如果 12 个月还没碰过编程/调试，就要换岗。否则三年后只是一个“会接线的”，不是“会调试的”。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">记住 03</span>
+      <h3>B 的入口最难，也最值得等</h3>
+      <p>板级维修是三条线里对年龄最友好、最接近“越老越值钱”的一条，但它几乎没有公开招聘的学徒岗，主要靠维修店、服务商、师傅带。找不到入口，就先在 C 里积累电气底子，再回头找 B。</p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:24px">
+    <strong>本文的范围：</strong>只讨论“以设备、系统、图纸、电路板为工作对象，靠技术积累增值”的非代码技术手艺。销售、客户成功、渠道、实施顾问、开店加盟等以客户关系为主的方向只在全景里留名，不进入评分；纯体力无技术积累的活、以及需要长期艺术训练的活，也不在排序内。
+  </div>
+</section>
+
+<section id="premise">
+  <div class="section-head"><span class="section-num">01</span><h2>研究对象与口径：先把边界说清楚</h2></div>
+  <p class="sub">同样的结论，放在不同前提下就是错的。下面是这份调研的研究对象和统计口径；不在表里的个人条件（存款、家庭、通勤、身体情况）会显著改变最终选择，请读者自行代入。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:720px">
+      <thead><tr><th style="width:150px">维度</th><th>口径</th><th>对选择的影响</th></tr></thead>
+      <tbody>
+        <tr><td>年龄</td><td>40 岁</td><td>集成商调试、厂商编制偏紧；厂内维护、维保、板级维修更宽容。不要和 25 岁比出差。</td></tr>
+        <tr><td>专业</td><td>计算机软件相关专业</td><td>学历本身不是障碍，但专业不对口，电气/机械基础要从零补；部分 HR 会卡专业与第一学历。</td></tr>
+        <tr><td>相关经验</td><td>不限定年限与方向</td><td>开发经验能加速学习，但在这行不算行业经验；入行仍从学徒/助理/装配起步。</td></tr>
+        <tr><td>地点</td><td>以北京 / 京津冀公开招聘为样本</td><td>北京城区工厂少，岗位多在亦庄、昌平、顺义、通州或河北；苏锡常、深莞同类岗位密度更高。</td></tr>
+        <tr><td>目标</td><td>找到一份能长期做、随经验增值的技术工作</td><td>优先“经验复利”型：板级维修、机器人维保、厂内维护；避开纯体力、纯重复、无技术积累的活。</td></tr>
+        <tr><td>不预设</td><td>是否接受出差、客户沟通、降薪、倒班、驻场</td><td>这些在正文里作为岗位的<b>客观描述</b>出现（出差比例、客户接触强度），不计入评分权重；读者按自己的情况加减。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:30px">计算机背景的通用资产与负债</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-green">资产</span>
+      <h3>学得快、看得懂、能自学</h3>
+      <ul class="mini-list">
+        <li>逻辑与排错习惯：故障定位、二分法、记录复盘，和调试设备是同一套思维。</li>
+        <li>看手册快：PLC 指令表、变频器参数表、机器人手册，本质都是技术文档。</li>
+        <li>会写脚本/上位机：数据采集、报警记录、报表，在工控现场是加分项。</li>
+        <li>自学能力：这行资料零散、师傅不一定教得系统，自学能力决定上限。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">负债</span>
+      <h3>没有证、没有手、没有现场</h3>
+      <ul class="mini-list">
+        <li>无电气/机械专业背景：电气图、元件、安全规程要从头学。</li>
+        <li>无现场经验：招聘方看的是“修过什么、处理过什么故障”，不是“学过什么”。</li>
+        <li>无证：低压电工证是电气岗的硬门槛，没有它连面试都难约。</li>
+        <li>年龄：集成商调试、厂商编制会卡；厂内维护、维保、板级维修相对宽容。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>一个必须纠正的误区：</strong>“计算机专业转工业自动化”不是平移，是换赛道。开发经验只解决“学得快”，不解决“有没有证、上没上过现场、修没修过东西”。这行真正的通行证是三样：<b>证（低压电工证等）、手（能接线能测量）、现场故障库（见过多少种故障、怎么判断的）</b>。
+  </div>
+
+  <h3 style="margin-top:30px">三条线不是三选一</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:760px">
+      <thead><tr><th style="width:130px">维度</th><th>A · 工业机器人</th><th>B · 工控 / 板级维修</th><th>C · PLC / 电气自动化</th></tr></thead>
+      <tbody>
+        <tr><td>最像什么</td><td>项目现场的技术工种</td><td>维修台前的手艺活</td><td>工厂与工地的电气技术岗</td></tr>
+        <tr><td>入口宽度</td><td>中：需要电气底子，调试岗竞争激烈</td><td>窄：公开招聘的学徒位很少</td><td>宽：装配、售后、维修、维保都招</td></tr>
+        <tr><td>收入曲线</td><td>起点中、上限高</td><td>起点低、后期靠手艺与口碑</td><td>起点中、上限中高</td></tr>
+        <tr><td>主要代价</td><td>出差、油污、安全、节拍压力</td><td>前 1–2 年收入低、资料少</td><td>现场苦、易停留在接线</td></tr>
+        <tr><td>合理定位</td><td>第二技能（在 C 之后）</td><td>长期专精（入口另找）</td><td>第一站入口</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout amber">
+    <strong>最现实的节奏：</strong>不要“脱产学半年再找工作”。先花 1–2 个月把低压电工证拿下，同时用业余时间补电气基础和 PLC 入门；然后带着证去找入口岗位，边干边学。三条线的推进顺序是：<b>C 先上车站住 → 在 C 里积累电气与现场 → 12–24 个月向 A 靠，或者回头找 B 的师傅位</b>。最怕的是三条线都只学不投、只等不做。
+  </div>
+</section>
+
+<section id="map">
+  <div class="section-head"><span class="section-num">02</span><h2>非代码手艺全景：地图有多大</h2></div>
+  <p class="sub">下面是“刨除代码”之后的全景，不是让人全学，是让人知道地图有多大。按 7 个家族分组，共 45 条，每条给出门槛、周期、收入、红利和坑。收入是北京/一线城市招聘信息与从业者口径的综合估计，波动很大；“入门”指能上岗，不等于能独立。</p>
+
+  <div class="callout amber">
+    <strong>先看筛选条件：</strong>本文收录的是“以设备、系统、图纸、电路板为工作对象，经验可积累、对年龄和学历相对友好”的非代码技术手艺。已被排除的是：售前/客户成功/渠道/FDE/OEM 技术支持/实施顾问（以客户关系为主）；纯体力无技术积累（如搬运、普工）；需要长期艺术训练或开店投入的方向。下表仍保留少量客户接触较高的条目，只作全景参考。
+  </div>
+
+  <div class="table-wrap" style="margin-top:18px">
+    <table style="min-width:1180px">
+      <thead>
+        <tr><th style="width:210px">方向 / 岗位</th><th style="width:160px">门槛 / 证书</th><th style="width:110px">学习周期</th><th style="width:170px">收入（入门 → 1–3 年 → 5 年+）</th><th style="width:190px">红利 / 需求</th><th style="width:220px">主要的坑</th></tr>
+      </thead>
+      <tbody>
+        <tr class="group"><td colspan="6">A · 工业自动化 / 智能制造</td></tr>
+        <tr><td class="name">PLC / 电气自动化调试<span class="row-note">集成商、非标设备、产线改造</span></td><td>低压电工证；会看图、接线、PLC 基础</td><td>3–6 个月基础，6–12 个月独立</td><td>5–8K → 10–18K → 20–30K</td><td>产线改造、新能源、锂电、光伏、物流</td><td>出差多、现场苦、年龄偏紧、容易只接线</td></tr>
+        <tr><td class="name">工业机器人调试 / 集成<span class="row-note">示教、编程、I/O、PLC 握手</span></td><td>低压电工证；机器人培训/仿真；PLC 基础</td><td>6–12 个月</td><td>6–8K → 10–18K → 20–35K</td><td>汽车、电子、物流、锂电产线</td><td>出差多、油污、节拍压力、安全风险</td></tr>
+        <tr><td class="name">工业机器人维修 / 维保</td><td>电气＋机械基础；报警处理</td><td>6–12 个月</td><td>5–7K → 9–15K → 15–25K</td><td>存量机器人越来越多，维保需求稳</td><td>岗位少、要懂机械/电气/编程、驻场</td></tr>
+        <tr><td class="name">厂内设备维护 / 电气维修</td><td>低压电工证；会修常见设备</td><td>1–3 个月</td><td>5–9K → 8–12K → 10–15K</td><td>工厂刚需、稳定</td><td>倒班、天花板低、夜班</td></tr>
+        <tr><td class="name">工控 / 板级维修<span class="row-note">变频器、伺服、PLC、电源</span></td><td>电子基础；焊台/示波器；元件级诊断</td><td>6–12 个月（学徒更慢）</td><td>4–6K → 8–15K → 15–30K+</td><td>维修台、低出差、越老越吃香</td><td>学徒机会少、资料少、前 1–2 年收入低</td></tr>
+        <tr><td class="name">非标设备装配 / 调试</td><td>低压电工证；机械装配</td><td>2–6 个月</td><td>5–8K → 8–12K → 12–18K</td><td>非标自动化需求多</td><td>体力、出差、天花板</td></tr>
+        <tr><td class="name">自动化售后工程师<span class="row-note">厂商/经销商，换板换件为主</span></td><td>电气基础＋产品培训</td><td>3–6 个月</td><td>6–10K → 10–16K → 15–25K</td><td>厂商/经销商网络</td><td>客户沟通多、出差、元件级维修少</td></tr>
+
+        <tr class="group"><td colspan="6">B · 特种设备 / 检测 / 计量</td></tr>
+        <tr><td class="name">电梯维保</td><td>特种设备作业证（电梯维修）</td><td>1–3 个月</td><td>5–8K → 8–12K → 10–15K</td><td>存量电梯、监管刚需</td><td>责任大、夜班、体力、低价竞争</td></tr>
+        <tr><td class="name">电梯检验</td><td>特种设备检验员证；考试</td><td>6–12 个月</td><td>8–15K → 12–20K</td><td>检验机构</td><td>门槛高、编制少、出差</td></tr>
+        <tr><td class="name">NDT 无损检测</td><td>NDT 一级/二级证</td><td>3–6 个月</td><td>6–10K → 10–15K → 15–25K</td><td>航空、核电、压力容器、轨道</td><td>环境/辐射、出差、证书等级</td></tr>
+        <tr><td class="name">计量校准</td><td>注册计量师（可选）；理工科</td><td>6–12 个月</td><td>6–10K → 10–15K → 15–20K</td><td>第三方计量机构、制造业</td><td>重复性工作、出差、证书</td></tr>
+        <tr><td class="name">消防设施维保 / 检测</td><td>消防设施操作员证</td><td>1–3 个月</td><td>5–8K → 8–12K</td><td>法规刚需</td><td>责任、夜班、低价</td></tr>
+        <tr><td class="name">特种设备检验<span class="row-note">压力容器/管道</span></td><td>检验员证；考试</td><td>6–12 个月</td><td>8–15K → 15–25K</td><td>化工、能源</td><td>门槛、出差、责任</td></tr>
+
+        <tr class="group"><td colspan="6">C · AI / 数据中心 / 新能源基建</td></tr>
+        <tr><td class="name">数据中心暖通 / 电气 / 弱电运维</td><td>低压电工证 / 制冷证</td><td>1–3 个月</td><td>6–10K → 10–15K → 15–20K</td><td>北京周边数据中心集群</td><td>倒班、驻场偏远、责任</td></tr>
+        <tr><td class="name">服务器 / GPU 硬件维修</td><td>服务器/电子基础</td><td>3–6 个月</td><td>6–10K → 10–18K</td><td>AI 算力、二手服务器</td><td>厂商换件为主、板级少、设备贵</td></tr>
+        <tr><td class="name">充电桩 / 储能 / 光伏运维</td><td>低压电工证；高处证（光伏）</td><td>1–3 个月</td><td>6–10K → 10–15K</td><td>新能源基建</td><td>出差/驻场、户外、高压</td></tr>
+        <tr><td class="name">风电运维</td><td>高处作业证、低压证</td><td>3–6 个月</td><td>7–12K → 12–18K</td><td>风电存量</td><td>高空、偏远、倒班、体能</td></tr>
+        <tr><td class="name">新能源汽车三电维修</td><td>低压＋高压电工证；厂家授权</td><td>3–6 个月</td><td>6–10K → 10–18K</td><td>新能源车保有量</td><td>高压安全、授权、门店</td></tr>
+        <tr><td class="name">动力电池维修 / 梯次利用</td><td>低压＋高压证；电池基础</td><td>3–6 个月</td><td>6–10K → 10–15K</td><td>电池售后、储能</td><td>安全、资质、设备</td></tr>
+        <tr><td class="name">弱电 / 安防 / 综合布线</td><td>低压证；网络基础</td><td>1–3 个月</td><td>5–9K → 8–12K</td><td>建筑智能化</td><td>体力、低价、出差</td></tr>
+        <tr><td class="name">智能家居安装调试</td><td>弱电基础；品牌培训</td><td>1–3 个月</td><td>5–10K → 8–15K</td><td>全屋智能</td><td>客户沟通多、跑工地、售后琐碎</td></tr>
+
+        <tr class="group"><td colspan="6">D · 银发 / 健康 / 医疗器械</td></tr>
+        <tr><td class="name">适老化改造评估 / 施工</td><td>评估师培训；施工经验</td><td>1–3 个月</td><td>6–12K → 10–18K</td><td>老龄化、政策</td><td>客户沟通、项目制、单价</td></tr>
+        <tr><td class="name">助听器验配师</td><td>助听器验配师证</td><td>3–6 个月</td><td>6–10K → 10–15K</td><td>听力健康</td><td>销售属性、门店、客户沟通</td></tr>
+        <tr><td class="name">义齿 CAD / CAM</td><td>口腔工艺 / CAD 培训</td><td>3–6 个月</td><td>6–10K → 10–15K</td><td>口腔医疗</td><td>精细、粉尘、订单</td></tr>
+        <tr><td class="name">康复辅具 / 假肢</td><td>假肢师证；长学徒</td><td>1–2 年</td><td>8–15K → 15–25K</td><td>康复需求</td><td>门槛、客户沟通、手工</td></tr>
+        <tr><td class="name">验光师</td><td>验光师证</td><td>6–12 个月</td><td>6–10K → 10–15K</td><td>眼健康</td><td>销售、门店</td></tr>
+        <tr><td class="name">家用医疗器械维修</td><td>电子基础</td><td>3–6 个月</td><td>5–9K → 8–12K</td><td>制氧机、呼吸机等</td><td>单价低、客户沟通、资质</td></tr>
+
+        <tr class="group"><td colspan="6">E · 低空 / 新兴</td></tr>
+        <tr><td class="name">无人机维修 / 装调</td><td>CAAC 执照 / 装调证</td><td>1–3 个月</td><td>6–10K → 10–15K</td><td>低空经济</td><td>行业波动、出差、法规</td></tr>
+        <tr><td class="name">无人机飞手 / 巡检</td><td>CAAC 执照</td><td>1–3 个月</td><td>6–10K → 10–15K</td><td>电力/巡检/测绘</td><td>户外、出差、季节</td></tr>
+        <tr><td class="name">服务机器人运维</td><td>电气/网络基础</td><td>1–3 个月</td><td>5–9K → 8–12K</td><td>商用清洁/配送</td><td>岗位少、客户现场</td></tr>
+        <tr><td class="name">3D 打印 / 扫描服务</td><td>设备操作</td><td>1–3 个月</td><td>5–9K → 8–12K</td><td>手办/工业样件</td><td>单价下降、订单不稳</td></tr>
+
+        <tr class="group"><td colspan="6">F · 高价值手艺 / 消费</td></tr>
+        <tr><td class="name">钟表维修</td><td>1–2 年学徒</td><td>1–2 年</td><td>5–10K → 10–20K+</td><td>高端消费、维修稀缺</td><td>学徒期长、零件、信任</td></tr>
+        <tr><td class="name">珠宝 / 奢侈品维修</td><td>1–2 年学徒</td><td>1–2 年</td><td>6–12K → 15–25K</td><td>奢侈品存量</td><td>信任、材料、门店</td></tr>
+        <tr><td class="name">乐器维修 / 调律</td><td>1–2 年学徒</td><td>1–2 年</td><td>6–10K → 10–20K</td><td>钢琴/管乐</td><td>听觉、客户、订单</td></tr>
+        <tr><td class="name">木作 / 家具修复</td><td>1–2 年学徒</td><td>1–2 年</td><td>5–10K → 10–18K</td><td>老家具/定制</td><td>体力、粉尘、订单</td></tr>
+        <tr><td class="name">改衣 / 织补</td><td>3–6 个月</td><td>3–6 个月</td><td>5–8K → 8–12K</td><td>服装修改</td><td>单价、体力</td></tr>
+        <tr><td class="name">宠物美容</td><td>1–3 个月培训</td><td>1–3 个月</td><td>5–8K → 8–12K</td><td>宠物经济</td><td>体力、咬伤、客户沟通</td></tr>
+        <tr><td class="name">咖啡 / 烘焙 / 卤味</td><td>1–3 个月</td><td>1–3 个月</td><td>5–9K（或开店）</td><td>消费</td><td>开店成本、体力、竞争</td></tr>
+
+        <tr class="group"><td colspan="6">G · 体力型高薪手艺</td></tr>
+        <tr><td class="name">电工（家装 / 工装）</td><td>低压电工证</td><td>1–3 个月</td><td>8–15K</td><td>装修/物业/工厂</td><td>体力、登高、接活不稳定</td></tr>
+        <tr><td class="name">焊工（氩弧 / 二保）</td><td>焊工证</td><td>3–6 个月</td><td>8–15K</td><td>制造/管道/钢结构</td><td>烟尘、体力、职业健康</td></tr>
+        <tr><td class="name">管道 / 水暖</td><td>—</td><td>1–3 个月</td><td>8–15K</td><td>家装/工程</td><td>体力、脏、纠纷</td></tr>
+        <tr><td class="name">防水</td><td>—</td><td>1–3 个月</td><td>8–15K</td><td>建筑维修</td><td>体力、质量纠纷</td></tr>
+        <tr><td class="name">泥瓦 / 瓦工</td><td>—</td><td>3–6 个月</td><td>10–20K</td><td>装修</td><td>体力、粉尘、腰</td></tr>
+        <tr><td class="name">空调安装 / 维修</td><td>制冷证＋高处证</td><td>1–3 个月</td><td>8–15K</td><td>家电售后</td><td>高空、旺季、体力</td></tr>
+        <tr><td class="name">电梯安装</td><td>特种设备证</td><td>1–3 个月</td><td>8–15K</td><td>电梯工程</td><td>高空、体力、出差</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span><b>说明：</b>收入为税前月薪综合口径，含出差补贴/加班；不同企业、不同技术等级差异很大。</span>
+    <span>“入门”＝能上岗，不等于能独立。</span>
+    <span>A1 调试/集成上限高于 A2/A3；同一方向内部差异很大。</span>
+    <span>表中标注“客户沟通多/销售属性”的条目（如售后工程师、智能家居、助听器、验光、宠物美容），客户接触强度明显更高，是否选择取决于个人接受度。</span>
+    <span>没有列出的方向，不代表不存在，只代表与本报告的范围不匹配或信息不足。</span>
+  </div>
+
+  <div class="callout" style="margin-top:24px">
+    <strong>从全景收窄：</strong>45 条里，真正适合“40 岁、计算机背景、想要一门可长期积累的技术手艺”的，集中在 A 家族的三条——工业机器人维修/调试、工控/板级维修、PLC/电气自动化调试。它们看起来像“一个方向”，其实是四种不同的活：机器人调试、机器人维保、板级维修、PLC 调试。出差、年龄、收入、入口都不一样，下一节拆开。
+  </div>
+</section>
+
+<section id="compare">
+  <div class="section-head"><span class="section-num">03</span><h2>A / B / C 三方向对比</h2></div>
+  <p class="sub">把三方向放在同一把尺子上：干什么、怎么入、学多久、挣多少、出不出差、接不接触客户、对年龄友不友好、岗位多不多、天花板在哪。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:980px">
+      <thead><tr><th style="width:120px">维度</th><th>A · 工业机器人</th><th>B · 工控 / 板级维修</th><th>C · PLC / 电气自动化</th></tr></thead>
+      <tbody>
+        <tr><td>具体活</td><td>机器人示教、编程、I/O、PLC 握手、维保、报警处理</td><td>变频器/伺服/PLC/电源/板级故障诊断、元件更换、老化测试</td><td>电气图、接线、PLC/HMI 编程、变频器/伺服参数、现场调试</td></tr>
+        <tr><td>入行门槛</td><td>低压电工证；机器人培训/仿真；PLC 基础</td><td>电子基础；焊台/示波器；学徒机会</td><td>低压电工证；电气基础；PLC 基础</td></tr>
+        <tr><td>学习周期</td><td>6–12 个月</td><td>6–12 个月（学徒更慢）</td><td>3–6 个月基础，6–12 个月独立</td></tr>
+        <tr><td>北京岗位量</td><td>中（集成商/汽车/电子/物流）</td><td>少（维修店/服务商/厂商）</td><td>多（集成商/工厂/物业/售后）</td></tr>
+        <tr><td>入门收入</td><td>6–8K</td><td>4–6K</td><td>5–8K</td></tr>
+        <tr><td>1–3 年</td><td>10–18K</td><td>8–15K</td><td>10–18K</td></tr>
+        <tr><td>5 年+</td><td>20–30K</td><td>15–30K+（自己接活）</td><td>20–30K</td></tr>
+        <tr><td>出差</td><td>调试多；维修中等；厂内少</td><td>少</td><td>集成商多；厂内少</td></tr>
+        <tr><td>客户接触</td><td>调试中等；维修中等；厂内少</td><td>少</td><td>集成商中等；厂内少</td></tr>
+        <tr><td>年龄友好</td><td>调试偏紧；维修/厂内较友好</td><td>友好</td><td>集成商偏紧；厂内友好</td></tr>
+        <tr><td>越老越吃香</td><td>是（经验＋故障库）</td><td>是（手艺＋口碑）</td><td>是（但需持续学新 PLC/协议）</td></tr>
+        <tr><td>主要坑</td><td>出差、油污、安全、节拍</td><td>学徒少、收入爬坡慢、资料少</td><td>只接线不编程、出差、年龄</td></tr>
+        <tr><td>适合谁</td><td>能出差、想搏高薪、喜欢机器人</td><td>想低出差、能坐得住、喜欢电子</td><td>想最快上车、就业面宽、能接受现场</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>不要用“最高值”做决策。</strong>招聘写的 6–12K 可能是“底薪＋出差补贴＋加班”；机器人调试的 20K 可能是“长期驻场＋每周 60 小时”。做决策看三个数：<b>中位数、最差情况、这种生活能不能接受</b>。
+  </div>
+
+  <h3 style="margin-top:30px">一天是什么样：四种现场</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="day-card">
+      <span class="tag tag-green">C1 · 集成商 PLC 调试</span>
+      <h3>在客户厂里，一个项目换一个城市</h3>
+      <ul class="day-list">
+        <li><b>08:00</b> 到厂、安全会、办作业票、确认停机</li>
+        <li><b>09:00</b> 对着电气图查线、接线、打号、查传感器</li>
+        <li><b>13:00</b> 下载 PLC 程序，手动/自动试车，处理气缸、变频器报警</li>
+        <li><b>18:00</b> 回酒店改程序、写调试记录、准备明天</li>
+      </ul>
+      <p class="small" style="margin-top:10px">项目 2 周到 3 个月不等；出差多，但技术成长最快。</p>
+    </div>
+    <div class="day-card">
+      <span class="tag tag-green">C2 · 厂内电气维护</span>
+      <h3>稳定、倒班、离家近</h3>
+      <ul class="day-list">
+        <li><b>08:00</b> 交接班、巡检产线、听上一班遗留问题</li>
+        <li><b>09:00</b> 处理停线报警；换传感器、接触器、变频器</li>
+        <li><b>14:00</b> 配合生产做保养、记录故障、备件盘点</li>
+        <li><b>20:00</b> 夜班交接；急修电话随时可能响</li>
+      </ul>
+      <p class="small" style="margin-top:10px">稳定、低出差，但天花板低；适合作为“先上车”的入口。</p>
+    </div>
+    <div class="day-card">
+      <span class="tag tag-amber">A1 · 机器人调试</span>
+      <h3>现场安装、示教、调节拍</h3>
+      <ul class="day-list">
+        <li><b>08:00</b> 现场安装机器人、接 I/O、确认安全门/急停/光栅</li>
+        <li><b>10:00</b> 示教轨迹、设坐标系、和 PLC 对握手信号</li>
+        <li><b>14:00</b> 试跑、调节拍、处理干涉和报警</li>
+        <li><b>19:00</b> 写程序备份、操作文档、验收</li>
+      </ul>
+      <p class="small" style="margin-top:10px">出差多、节拍压力大；收入高，但体力和家庭成本要算进去。</p>
+    </div>
+    <div class="day-card">
+      <span class="tag tag-terra">B · 板级维修</span>
+      <h3>维修台前，和电路板较劲</h3>
+      <ul class="day-list">
+        <li><b>09:00</b> 拆机、目检、测电源、查驱动电路</li>
+        <li><b>11:00</b> 换元件、飞线、老化测试、记录故障</li>
+        <li><b>14:00</b> 报价、等件、修下一台；客户接触少</li>
+        <li><b>18:00</b> 整理故障库、复盘今天修不好的板子</li>
+      </ul>
+      <p class="small" style="margin-top:10px">低出差、越老越吃香；但前 1–2 年收入低，学徒机会少。</p>
+    </div>
+  </div>
+</section>
+
+<section id="six">
+  <div class="section-head"><span class="section-num">04</span><h2>六种具体活，别混为一谈</h2></div>
+  <p class="sub">A/B/C 是三类，不是三个岗位。真正决定生活状态的是下面这六种具体活：出差多少、年龄友不友好、岗位多不多、天花板在哪。</p>
+
+  <div class="table-wrap">
+    <table class="hm">
+      <thead>
+        <tr><th style="width:210px">具体岗位</th><th>年龄友好</th><th>出差强度</th><th>客户接触</th><th>岗位量</th><th>入门速度</th><th>5 年收入</th><th style="width:220px">一句话定位</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>A1 · 机器人调试 / 集成</td><td class="bad">低</td><td class="bad">高</td><td class="mid">中</td><td class="mid">中</td><td class="mid">中</td><td class="good">高</td><td style="text-align:left">高薪但出差多，适合 C 之后转</td></tr>
+        <tr><td>A2 · 机器人维修 / 维保</td><td class="mid">中</td><td class="mid">中</td><td class="mid">中</td><td class="bad">少</td><td class="mid">中</td><td class="mid">中</td><td style="text-align:left">低出差版机器人岗，岗位少</td></tr>
+        <tr><td>A3 · 厂内机器人维护</td><td class="good">高</td><td class="good">低</td><td class="good">低</td><td class="bad">少</td><td class="mid">中</td><td class="mid">中</td><td style="text-align:left">稳定、倒班、年龄友好</td></tr>
+        <tr><td>B · 板级维修</td><td class="good">高</td><td class="good">低</td><td class="good">低</td><td class="bad">少</td><td class="bad">慢</td><td class="good">高</td><td style="text-align:left">手艺复利，但入口最难找</td></tr>
+        <tr><td>C1 · 集成商 PLC 调试</td><td class="bad">低</td><td class="bad">高</td><td class="mid">中</td><td class="good">多</td><td class="good">快</td><td class="good">高</td><td style="text-align:left">最快上车，也最容易只接线</td></tr>
+        <tr><td>C2 · 厂内电气维护</td><td class="good">高</td><td class="good">低</td><td class="good">低</td><td class="good">多</td><td class="good">快</td><td class="mid">中</td><td style="text-align:left">稳定现金流，技术天花板低</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="legend">
+    <span><b>颜色：</b><span class="good" style="padding:2px 7px;border-radius:5px">绿＝有利</span> <span class="mid" style="padding:2px 7px;border-radius:5px">黄＝中等</span> <span class="bad" style="padding:2px 7px;border-radius:5px">红＝不利</span></span>
+    <span>这张表是相对比较，不是绝对判断；同一岗位在不同企业差异很大。</span>
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>最关键的一刀：</strong>C1 和 C2 都叫“PLC”，但 C1 是项目制、出差、成长快；C2 是驻厂、倒班、稳定但天花板低。A1 和 A2 都叫“机器人”，但 A1 是高薪出差岗，A2 是低出差维保岗。面试时一定要问清楚：<b>“这个岗位出差比例多少？参与编程/调试吗？还是只负责接线/保养？”</b>
+  </div>
+</section>
+
+<section id="score">
+  <div class="section-head"><span class="section-num">05</span><h2>评分与推荐：C 4.15，B 3.60，A 3.33</h2></div>
+  <p class="sub">权重只使用可公开比较的维度：年龄/学历友好 30%、好就业 25%、入行速度 20%、5 年收入 15%、越老越吃香 10%。分数 1–5，越高越有利。出差强度与客户接触不进入权重，因为它们是“生活代价”而不是“岗位好坏”，写在正文里由读者自行折算。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:760px">
+      <thead><tr><th style="width:200px">维度（权重）</th><th style="text-align:center">A · 工业机器人</th><th style="text-align:center">B · 工控/板级维修</th><th style="text-align:center">C · PLC/电气自动化</th></tr></thead>
+      <tbody>
+        <tr><td>年龄/学历友好（30%）</td><td style="text-align:center">3.0</td><td style="text-align:center">5.0</td><td style="text-align:center">4.0</td></tr>
+        <tr><td>好就业（25%）</td><td style="text-align:center">4.0</td><td style="text-align:center">2.4</td><td style="text-align:center">4.5</td></tr>
+        <tr><td>入行速度（20%）</td><td style="text-align:center">3.0</td><td style="text-align:center">2.0</td><td style="text-align:center">5.0</td></tr>
+        <tr><td>5 年收入（15%）</td><td style="text-align:center">3.5</td><td style="text-align:center">4.0</td><td style="text-align:center">3.5</td></tr>
+        <tr><td>越老越吃香（10%）</td><td style="text-align:center">3.0</td><td style="text-align:center">5.0</td><td style="text-align:center">3.0</td></tr>
+        <tr style="background:#f0ece1"><td style="font-size:14px">加权总分</td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--terra)">3.33</td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--amber)">3.60</td><td style="text-align:center;font-size:18px;font-weight:800;color:var(--green)">4.15</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="score-bars">
+    <div class="score-bar"><span class="sb-label">C · PLC/电气自动化</span><div class="sb-track"><div class="sb-fill c"></div></div><span class="sb-num">4.15</span></div>
+    <div class="score-bar"><span class="sb-label">B · 工控/板级维修</span><div class="sb-track"><div class="sb-fill b"></div></div><span class="sb-num">3.60</span></div>
+    <div class="score-bar"><span class="sb-label">A · 工业机器人</span><div class="sb-track"><div class="sb-fill a"></div></div><span class="sb-num">3.33</span></div>
+  </div>
+
+  <h3 style="margin-top:30px">怎么读这张表</h3>
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-green">C 第一</span>
+      <h3>赢在就业面和入行速度</h3>
+      <p>C 的 4.15 不是因为它最“高级”，是因为它最容易上车、岗位最多、最能摸到真机。但 C 内部差异极大——C1 集成商和 C2 厂内维护是两种人生，选择岗位类型比选择方向更重要。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">B 第二</span>
+      <h3>差在“好就业”和“入行速度”</h3>
+      <p>B 在年龄友好和越老越吃香两项拿满分，掉分全部来自入口：公开招聘的学徒位少、起薪低、爬坡慢。如果读者更看重低出差、低客户接触，把这两项作为附加权重，B 的实际排序会上升——这正是本文不把偏好计入总分的原因。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">A 第三</span>
+      <h3>不是不值得去，是不适合先上车</h3>
+      <p>A 的调试岗收入高，但出差多、年龄偏紧、现场苦。它更适合作为 C 之后的第二技能；先 C 再 A，比直接冲 A 稳。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">三种人选法</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:720px">
+      <thead><tr><th style="width:240px">典型情形</th><th>推荐</th><th>理由</th></tr></thead>
+      <tbody>
+        <tr><td>只能选一个，想最快上岗</td><td><b>C</b>（优先 C1 集成商/非标，或 C2 厂内维护）</td><td>就业面最宽、入门最快、能接触真机；先解决“有没有工作”，再谈“喜不喜欢”。</td></tr>
+        <tr><td>能找到靠谱板级维修师傅/维修店学徒</td><td><b>B</b> 可以直接开始</td><td>低出差、低客户接触、越老越吃香；但入口比 C 窄，没有师傅不要硬等。</td></tr>
+        <tr><td>能接受长期出差，想搏高薪</td><td><b>C→A</b>，12–24 个月转</td><td>C 打电气/PLC 底子，A 做机器人调试/集成；设 deadline，不要困在 C。</td></tr>
+        <tr><td>完全不能接受出差</td><td><b>C2 厂内维护</b> 或 <b>B 板级维修</b></td><td>C1/A1 出差多，别勉强；C2 稳定但天花板低，B 需要师傅。</td></tr>
+        <tr><td>想长期做一门越老越值钱、少跑现场的手艺</td><td><b>B</b> 作长期专精，C 作入口</td><td>先用 C 上车解决现金流，业余跟师傅/维修店学 B；等 B 能独立接活，再逐步转。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>不要因为 A 听起来高级就选 A。</strong>机器人调试岗的出差强度、现场环境、年龄门槛，都比招聘文案写得狠。一个 40 岁、没有现场经验的人，直接投机器人调试，大概率竞争不过 28 岁、能连续驻场 3 个月的候选人。C→A 的意义，是先用 C 换到“现场经验＋电气底子”，再转。
+  </div>
+
+  <div class="callout">
+    <strong>如果只看客观条件：</strong>C1 集成商/非标调试是唯一能在 6 个月内同时摸到电气、PLC、现场故障和机器人（很多集成商也接机器人项目）的入口，起薪 6–8K、成长最快；A 不必现在冲，等 C 做满 12–24 个月再转更稳；B 需要额外的入口（师傅、维修店、服务商），如果在 C 期间能接触到板级维修，可以逐步向 B 迁移。
+  </div>
+</section>
+
+<section id="route">
+  <div class="section-head"><span class="section-num">06</span><h2>C→A 路线：12–24 个月，带 deadline</h2></div>
+  <p class="sub">这条路成立，但有前提：C 不是终点，是跳板；必须主动争取编程/调试，必须设 deadline。下面按时间拆，每个阶段都有“目标”和“检查点”。</p>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="wk">0–4 周 · 拿证 + 摸真机 + 找入口</div>
+      <h4>先确认自己不排斥，再投入</h4>
+      <p>报名低压电工证（北京应急管理局指定机构；周期/费用以实际为准）；补电气基础：电压/电流/电阻、交直流、三相、继电器/接触器/断路器、安全回路、电气图；买基础工具（万用表、钳形表、验电笔、螺丝刀、剥线钳）；找一家经销商/服务商或维修店，争取现场跟班 2–3 天（第 7 节有具体办法）。<b>目标：知道这行一天什么样，确认自己能不能接受现场。</b></p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">1–3 个月 · 先上车</div>
+      <h4>工资不是第一目标，摸到真机才是</h4>
+      <p>入口岗位：电气装配/接线、设备维修学徒、售后助理、厂内维修、PLC 调试助理。渠道：经销商/服务商上门或电话、BOSS/智联/58、当地人才市场、工业园区招聘、同行引荐。每周记录 3 个故障案例：症状、判断、测量、处理、结果。<b>目标：认识元件、学会安全规程、能独立处理简单故障。</b></p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">3–6 个月 · PLC 入门</div>
+      <h4>从“接线”转“调试”</h4>
+      <p>二选一：西门子 S7-1200 + TIA Portal（华北生态大）或三菱 FX + GX Works。学 HMI（威纶通/西门子）、变频器参数、伺服基础、Modbus/Profinet；能改程序、下载、监控、强制 I/O。做 3 个小项目：传送带启停、气缸顺序、报警/配方。<b>目标：能独立改简单程序，参与调试。</b></p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">6–12 个月 · 靠近机器人</div>
+      <h4>哪怕旁观、记录、打下手，也要碰</h4>
+      <p>学示教器、坐标系、I/O、程序结构、PLC-机器人握手、安全门/急停/光栅；用 ABB RobotStudio / FANUC ROBOGUIDE 做仿真；在现有岗位争取接触机器人。<b>目标：能处理常见报警、备份/恢复、简单轨迹修改。</b></p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">12–24 个月 · 转 A</div>
+      <h4>内部转岗优先，外部投递兜底</h4>
+      <p>内部转岗优先；外部投机器人调试/维保/厂内维护；简历写“PLC＋机器人＋现场故障处理”，不要只写“接线”。<b>deadline：24 个月还没碰到机器人，换岗/换公司。</b></p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">24 个月+ · 选 A1 / A2 / A3</div>
+      <h4>或者回到 B，做长期低出差专精</h4>
+      <p>A1 调试/集成：高薪、出差多；A2 维修/维保：低出差、岗位少；A3 厂内维护：稳定、倒班。也可以 B 作长期专精（如果找到师傅）。<b>目标：把“会什么”沉淀成故障库/作品/口碑，而不是只换工资。</b></p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:24px">
+    <strong>C 的最大陷阱：</strong>进了集成商，天天接线、拧螺丝、跑腿，三年没写过一行程序。避免方法：面试时问“这个岗位参与调试吗？”；入职后主动要编程任务；每 6 个月检查一次自己有没有进步。<b>不会编程的 C，只是“会接线的”，工资和年龄都会卡住。</b>
+  </div>
+
+  <h3 style="margin-top:30px">检查点：什么时候该换</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:720px">
+      <thead><tr><th style="width:130px">时间</th><th>应该达到</th><th>如果没达到</th></tr></thead>
+      <tbody>
+        <tr><td>6 个月</td><td>能独立处理常见电气故障；能改简单 PLC 程序</td><td>换岗位/换师傅；不要继续只做装配</td></tr>
+        <tr><td>12 个月</td><td>参与过调试；接触过机器人（哪怕旁观）</td><td>主动申请参与项目；申请不到就换公司</td></tr>
+        <tr><td>24 个月</td><td>能独立做机器人常见报警/轨迹；或 B 能独立修板</td><td>换岗/换公司；不要用“稳定”骗自己</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="friend">
+  <div class="section-head"><span class="section-num">07</span><h2>入行渠道：没有熟人，怎么进这行</h2></div>
+  <p class="sub">工业自动化的招聘和互联网不一样：大量岗位不在大平台上，而在经销商、服务商、维修店、集成商的“自己人”渠道里。没有熟人，就得靠主动上门、主动打电话、主动去现场问。这一节讲具体怎么找入口。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:900px">
+      <thead><tr><th style="width:170px">渠道</th><th>怎么用</th><th style="width:180px">适合拿到的岗位</th><th style="width:200px">注意</th></tr></thead>
+      <tbody>
+        <tr><td>招聘平台（BOSS/智联/58）</td><td>搜“电气装配”“设备维修”“售后工程师”“PLC 调试助理”“维修学徒”，按区县筛；每天固定投递＋跟进</td><td>集成商助理、厂内维护、售后、装配</td><td>回复率低；问清是否出差、是否参与调试</td></tr>
+        <tr><td>经销商 / 服务商官网与门店</td><td>查到本地代理商的售后部门，直接打电话或带着简历上门；说明“想从学徒/助理做起”</td><td>售后助理、维修学徒、备件/技术支持</td><td>最有效，也最需要脸皮；被拒是常态</td></tr>
+        <tr><td>维修店 / 维修中心</td><td>搜“变频器维修”“伺服维修”“工控维修”，一家一家跑，问是否带学徒</td><td>板级维修学徒（B 线唯一常见入口）</td><td>可能不收学费也不给工资，先谈清楚</td></tr>
+        <tr><td>工业园区 / 人才市场</td><td>亦庄、昌平、顺义、通州的园区招聘会、劳务市场；现场问设备维护岗</td><td>厂内设备维护、电气维修、装配</td><td>信息真实、上岗快；倒班多</td></tr>
+        <tr><td>考证培训机构</td><td>报低压电工证时，顺带问机构有没有合作企业、结业推荐</td><td>电气装配、维保、物业电气</td><td>只信“真机实操＋可核验就业”，不签贷款</td></tr>
+        <tr><td>行业群 / 展会 / 论坛</td><td>工控论坛、本地电气群、工业自动化展会；提问、打听招人</td><td>零散岗位、师傅信息</td><td>慢，但能问到真实行情</td></tr>
+        <tr><td>厂内转岗</td><td>先以装配、普工、仓管进厂，再申请转到设备维护/调试</td><td>厂内维护、调试助理</td><td>周期长；要有明确的转岗时间表</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>最容易被忽略的一条：上门。</strong>工业自动化的中小集成商、维修店，很多根本不发招聘启事，但常年缺人。带着简历、说清楚“能吃苦、想学、工资可以谈”，比在网上投一百份更有效。一次被拒不要紧，留下联系方式，过两个月再问。
+  </div>
+
+  <h3 style="margin-top:30px">第一次进现场，看什么</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-green">看工作本身</span>
+      <h3>判断这活你能不能干</h3>
+      <ul class="mini-list">
+        <li>一天站多久、爬高几次、搬多重的东西。</li>
+        <li>现场温度、油污、噪音、粉尘；有没有安全培训和劳保。</li>
+        <li>出差频率和时长：一周、一个月，还是常驻外地。</li>
+        <li>调试占多少、接线占多少、跑腿占多少。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">看人和规矩</span>
+      <h3>判断这地方值不值得待</h3>
+      <ul class="mini-list">
+        <li>带的人愿不愿意教，还是只让你打杂。</li>
+        <li>有没有图纸、手册、故障记录可看；还是全靠师傅口头传。</li>
+        <li>安全规程是否执行：停电验电、挂牌、双人作业。</li>
+        <li>工资结构：底薪、出差补贴、加班费、社保是否齐全。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">该问的 10 个问题</h3>
+  <ol class="q-list">
+    <li>你们主要做哪类产品线？PLC、变频器、伺服、低压配电，还是机器人？</li>
+    <li>新人进来一般从什么岗位开始？前三个月主要干什么？</li>
+    <li>这个岗位参与调试吗？还是只负责接线、装配、保养？</li>
+    <li>出差比例大概多少？一次出去多久？有没有驻场？</li>
+    <li>招人卡学历/年龄吗？40 岁左右的人进来做过吗？</li>
+    <li>有没有老师傅带？带多久？</li>
+    <li>入门 1–3 年的真实收入大概多少？工资结构是什么？</li>
+    <li>公司有没有原厂培训、技术资料、故障案例可以学？</li>
+    <li>板级维修在你们这里是谁做？厂商做不做元件级？</li>
+    <li>如果我三个月内想上岗，你建议我先学什么、先考什么证？</li>
+  </ol>
+
+  <h3 style="margin-top:30px">和熟人/前同事打交道的边界</h3>
+  <ul class="checklist red">
+    <li><b>角色说清楚：</b>是来学、来应聘，不是来合伙。开口先说“我想从学徒/助理做起”，别用“咱俩一起干”开场。</li>
+    <li><b>钱先谈：</b>学徒工资、是否交社保、出差补贴、是否收费培训，全部提前问清楚；含糊的地方后面一定会变成矛盾。</li>
+    <li><b>别透支人情：</b>不要让对方把你塞进他不了解的岗位，不要绕过他直接联系他的客户，不要拿他的名义接活。</li>
+    <li><b>合规：</b>不拍客户设备与资料、不泄露故障库、不私自接活；带电作业必须持证，安全第一。</li>
+    <li><b>入行前不合伙：</b>技能没成型时合伙，钱和关系都容易伤。先做员工，等能独立接活再谈别的。</li>
+    <li><b>对方说“不好办”就换问题：</b>改问“那你觉得我该找谁”，不要追问、不要施压。</li>
+    <li><b>保持联系：</b>不要只在求人时出现；跟班结束后发个总结或感谢，平时正常走动。</li>
+  </ul>
+</section>
+
+<section id="action">
+  <div class="section-head"><span class="section-num">08</span><h2>12 个月行动清单</h2></div>
+  <p class="sub">不要“学好了再找”。边投、边学、边进现场；每个阶段都要有可验证的产出，而不是“我学了三个月”。下表把“求职动作”和“学习·实操动作”分开列，两者同时推进：投递不停，练习也不停。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:900px">
+      <thead><tr><th style="width:140px">时间</th><th>求职动作</th><th>学习 · 实操动作</th></tr></thead>
+      <tbody>
+        <tr><td>0–1 个月</td><td>报名低压电工证；搜集本地区县 20–30 家集成商/经销商/维修店名单；做一份“技能从零开始”的简历</td><td>电气基础：电压电流电阻、交直流、三相、继电器/接触器/断路器、安全回路；会看简单电气图；买万用表并会用</td></tr>
+        <tr><td>1–3 个月</td><td>拿证后集中投递＋上门：电气装配、设备维修学徒、售后助理、厂内维护；每周至少 2 次现场或电话联系</td><td>搭最小练习台：按钮/继电器/接触器/指示灯/小电机；做自锁、互锁、正反转、急停；开始 PLC 入门（S7-1200 或 FX 系列）</td></tr>
+        <tr style="background:#f0ece1"><td><b>3 个月</b><br><span class="row-note">第一个检查点</span></td><td>评估：有没有面试？有没有人愿意带？如果没有，换渠道（从平台转上门、从市区转郊区/河北）</td><td>评估：能不能独立接线、看懂简单图？PLC 能不能写启停和定时？</td></tr>
+        <tr><td>3–6 个月</td><td>争取上岗；如果只能进装配，明确谈“多久能转调试”</td><td>PLC 指令、定时器/计数器、模拟量；HMI 基础；变频器参数与调速</td></tr>
+        <tr><td>6–12 个月</td><td>在岗争取参与调试项目；每 3 个月检查一次有没有进步</td><td>伺服基础、Modbus/Profinet；机器人仿真（RobotStudio / ROBOGUIDE）；积累故障记录</td></tr>
+        <tr><td>12 个月</td><td>内部转岗或外部投递机器人相关岗位；或寻找板级维修的师傅位</td><td>能独立处理常见报警、程序备份/恢复、简单轨迹修改；整理一份可展示的故障案例集</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card">
+      <span class="tag tag-green">如果一边上班一边准备</span>
+      <h3>一周时间表（示例）</h3>
+      <ul class="mini-list">
+        <li><b>工作日晚上：</b>1–1.5 小时，电气基础或 PLC 视频＋做笔记。</li>
+        <li><b>周六：</b>实操、跑经销商/维修店、整理故障案例。</li>
+        <li><b>周日：</b>复盘一周进度、休息。</li>
+        <li><b>原则：</b>不裸辞脱产；先有收入，再用业余时间换技能。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">如果时间比较充裕</span>
+      <h3>把“找入口”当成全职工作</h3>
+      <ul class="mini-list">
+        <li>上午投递、打电话、约上门；下午学理论与实操。</li>
+        <li>先找低门槛技术岗：电气装配、维修学徒、售后助理、厂内维护。</li>
+        <li>工资可以低，但必须能摸到真机、有人带。</li>
+        <li>不要把“学习”当成拖延找工作的借口。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout amber" style="margin-top:22px">
+    <strong>每周必须留下的证据：</strong>一张接线/调试照片（不涉密）、一段故障记录（现象—判断—测量—处理—结果）、一个 PLC 小程序、一次现场跟班总结。三个月后，这些东西比“我学了三个月”有说服力得多。
+  </div>
+</section>
+
+<section id="cert">
+  <div class="section-head"><span class="section-num">09</span><h2>证书、工具、学习资源</h2></div>
+  <p class="sub">证书是门票，不是工作；工具是练习，不是收藏。先把最必要的证和最小练习台搞定，不要一上来买一屋子设备。</p>
+
+  <h3>证书：先考低压电工证</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:820px">
+      <thead><tr><th style="width:190px">证书</th><th>用途</th><th style="width:190px">周期 / 费用（参考）</th><th style="width:100px">优先级</th></tr></thead>
+      <tbody>
+        <tr><td>低压电工证</td><td>上岗必备，电气作业；C/B/A 都用得上</td><td>1–2 个月；1000–2000 元</td><td>★★★★★</td></tr>
+        <tr><td>高处作业证</td><td>空调、电梯、光伏、风电</td><td>1–2 个月；800–1500 元</td><td>按方向</td></tr>
+        <tr><td>制冷证</td><td>空调、数据中心暖通</td><td>1–2 个月；1000–2000 元</td><td>按方向</td></tr>
+        <tr><td>特种设备作业证</td><td>电梯、叉车、压力容器</td><td>1–3 个月；1000–2000 元</td><td>按方向</td></tr>
+        <tr><td>工业机器人系统运维员</td><td>证明学习意愿，不是门票</td><td>1–3 个月；2000–4000 元</td><td>★★</td></tr>
+        <tr><td>焊工证</td><td>焊工上岗</td><td>1–3 个月；1000–2000 元</td><td>按方向</td></tr>
+        <tr><td>注册计量师</td><td>计量方向</td><td>6–12 个月；考试</td><td>按方向</td></tr>
+        <tr><td>NDT 证</td><td>无损检测</td><td>3–6 个月；按方法/等级</td><td>按方向</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small-note">费用/周期为市场参考，以北京当地机构实际报价为准；不要买证、不要相信“包过”。证书只证明学过，真机经验才决定能不能上岗。</p>
+
+  <h3 style="margin-top:30px">练习台：2000–4000 元起步</h3>
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-green">测量工具</span>
+      <h3>先买这些</h3>
+      <ul class="mini-list">
+        <li>万用表：Fluke 15B+（约 600–900 元）或优利德（约 150–300 元）</li>
+        <li>钳形表：约 100–300 元</li>
+        <li>验电笔、螺丝刀套装、剥线钳、压线钳、绝缘胶带：约 200–400 元</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">控制器件</span>
+      <h3>二手就够</h3>
+      <ul class="mini-list">
+        <li>西门子 S7-1200 1214C（约 1000–2000 元）或三菱 FX3U（约 500–1000 元）</li>
+        <li>变频器：约 300–800 元</li>
+        <li>按钮/继电器/接触器/指示灯/导轨/线号管/24V 电源：约 300–600 元</li>
+        <li>小电机：约 100–300 元</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">先别买</span>
+      <h3>等确定方向再买</h3>
+      <ul class="mini-list">
+        <li>示波器、焊台、热风枪：板级维修再买，别一上来堆设备。</li>
+        <li>昂贵的原厂培训/开发套件：先用仿真和二手件。</li>
+        <li>“包就业”课程：不碰。</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small-note">二手设备有风险，找懂行的朋友或在职维修工帮忙验货；总预算控制在 2000–4000 元，不要影响生活现金流。</p>
+
+  <h3 style="margin-top:30px">学习资源与练习顺序</h3>
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card">
+      <span class="tag tag-green">资源</span>
+      <h3>看什么、跟谁学</h3>
+      <ul class="mini-list">
+        <li>技成培训：体系课，付费；适合补系统框架。</li>
+        <li>中华工控网、B 站：搜“西门子 S7-1200 入门”“PLC 接线”“ABB 机器人示教”。</li>
+        <li>西门子/三菱/ABB/FANUC 官方手册：最准，但枯燥；当字典用。</li>
+        <li>书：《西门子 S7-1200 PLC 编程与应用》《电气控制与 PLC 应用》《工业机器人技术基础》。</li>
+        <li>AI 辅助：解释指令、生成梯形图思路、翻译手册、排查故障；但必须动手验证。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">练习顺序</span>
+      <h3>从电路到机器人</h3>
+      <ul class="mini-list">
+        <li>电源＋按钮＋指示灯：点亮/熄灭、常开常闭。</li>
+        <li>继电器/接触器：自锁、互锁、点动/长动。</li>
+        <li>电机正反转：互锁、热继电器、急停。</li>
+        <li>PLC 输入输出：开关量、模拟量、定时器/计数器。</li>
+        <li>传送带/气缸：顺序控制、传感器、报警。</li>
+        <li>变频器/伺服：参数、启停、调速、位置控制。</li>
+        <li>机器人仿真：示教、坐标系、I/O、简单轨迹。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="beijing">
+  <div class="section-head"><span class="section-num">10</span><h2>北京与京津冀：岗位在哪</h2></div>
+  <p class="sub">北京城区内大型工厂少，很多岗位在郊区或河北。能否接受通勤/驻场/出差，是比“学不学得会”更现实的筛选条件。</p>
+
+  <div class="grid g3">
+    <div class="card">
+      <span class="tag tag-green">亦庄 · 经开区</span>
+      <h3>智能制造 / 机器人 / 汽车电子</h3>
+      <p>机器人集成商、自动化设备、汽车电子、物流自动化相对集中；C/A 岗位多，通勤可从市区/通州/大兴考虑。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-green">昌平 / 顺义 / 通州</span>
+      <h3>工厂 / 设备维护 / 物业电气</h3>
+      <p>制造业工厂、园区物业、设备维护岗位；C2 厂内维护较多，稳定但薪资中等。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">廊坊 / 固安 / 燕郊 / 天津武清</span>
+      <h3>制造成本低，项目现场多</h3>
+      <p>工厂、集成商、项目现场；可能要求驻场或频繁通勤。房租/生活成本低，但家庭安排要提前谈。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-amber">怀来 / 张北 / 廊坊</span>
+      <h3>数据中心集群</h3>
+      <p>暖通、电气、弱电运维岗位多；倒班、驻场偏远，适合想稳定、能接受轮班的人。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-terra">唐山 / 保定</span>
+      <h3>钢铁 / 化工 / 装备制造</h3>
+      <p>C/A 项目多，但驻场和出差比例高；薪资可能高于北京周边，生活成本低。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-gray">全市 · 电梯维保</span>
+      <h3>就近分配，夜班/急修</h3>
+      <p>电梯维保岗位分布广，就近分配；责任大、夜班、急修，适合想稳定、能吃苦的人。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">投递渠道</h3>
+  <div class="table-wrap" style="margin-top:12px">
+    <table class="compare" style="min-width:720px">
+      <thead><tr><th style="width:180px">渠道</th><th>适合</th><th>注意</th></tr></thead>
+      <tbody>
+        <tr><td>BOSS 直聘</td><td>集成商、售后、厂内维护、机器人</td><td>回复快；问清出差/编程比例/社保</td></tr>
+        <tr><td>智联招聘</td><td>厂商、较大企业、正式编制</td><td>流程慢；简历要按岗位改</td></tr>
+        <tr><td>58 同城</td><td>蓝领/技工、维修学徒、电气装配</td><td>信息杂；防中介/培训贷</td></tr>
+        <tr><td>当地人才市场 / 工业园区</td><td>工厂、物业、设备维护</td><td>线下直接；适合快速上岗</td></tr>
+        <tr><td>经销商 / 服务商官网</td><td>售后工程师、维修学徒</td><td>主动打电话/上门，比海投有效</td></tr>
+        <tr><td>熟人 / 同行引荐</td><td>经销商/服务商/集成商</td><td>最有效；前提是关系可靠，别把人脉用过头</td></tr>
+        <tr><td>猎聘</td><td>白领/资深岗</td><td>不适合作为蓝领/技工主渠道</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="pitfall">
+  <div class="section-head"><span class="section-num">11</span><h2>避坑清单</h2></div>
+  <p class="sub">这些坑，每一个都有人踩过。提前知道，能省下几个月和几万块。</p>
+
+  <ul class="checklist red">
+    <li><b>培训贷 / “包就业”：</b>不碰。先看是否提供真机、实操、可核验就业数据；不要签贷款协议。</li>
+    <li><b>只学不练：</b>PLC 不是看书能会的；没有练习台/真机，学完就忘。每学一个指令，必须上手验证。</li>
+    <li><b>只接线不编程：</b>C 的最大陷阱。面试问清楚“参与调试吗”，入职主动争取编程任务。</li>
+    <li><b>低估出差强度：</b>C1、A1 出差多，动辄一个月。先确认自己和家人能接受，不要上岗后才发现。</li>
+    <li><b>厂商编制执念：</b>厂商 HR 可能卡学历/专业/年龄；经销商、服务商、集成商更现实，先进去再发展。</li>
+    <li><b>和熟人合伙：</b>技能没成型时合伙，钱和关系都容易伤。入行前 2–3 年先做员工，把边界说清楚。</li>
+    <li><b>带电作业：</b>没证不碰高压；安全第一，不要为了表现冒险。</li>
+    <li><b>低价接活：</b>板级维修初期不要打价格战；先积累口碑和故障库。</li>
+    <li><b>证书崇拜：</b>证书不是工作；真机经验、故障库、口碑才是。</li>
+    <li><b>信息差：</b>招聘写的 6–12K 可能是“底薪＋出差补贴＋加班”；问清楚税前/税后、社保、补贴。</li>
+    <li><b>年龄焦虑：</b>40 岁走厂内维护/维保/板级维修，比集成商调试更稳；不要和 25 岁比出差。</li>
+    <li><b>选错岗位类型：</b>同一个“PLC”名头下，项目制调试和驻厂维护是两种生活；投递前问清岗位性质。</li>
+    <li><b>裸辞脱产学半年：</b>不要。先上车，边干边学；没有收入的时间越长，回头越难。</li>
+    <li><b>只看工资：</b>第一份工作看能不能摸到真机、学到调试；工资低一点可以接受，但要有成长路径。</li>
+  </ul>
+</section>
+
+<section id="verify">
+  <div class="section-head"><span class="section-num">12</span><h2>待验证事项与决策门</h2></div>
+  <p class="sub">这份文档不是“已确定”，是“目前最好的假设”。下面这些必须用真实信息验证；验证完再拍板。</p>
+
+  <div class="table-wrap">
+    <table class="compare" style="min-width:860px">
+      <thead><tr><th style="width:190px">待验证</th><th>怎么验证</th><th style="width:260px">影响</th></tr></thead>
+      <tbody>
+        <tr><td>当地岗位量</td><td>BOSS/智联/58 搜两周，统计岗位数、薪资、要求；再跑 2–3 个工业园区</td><td>决定先投哪些岗位、是否接受郊区/河北/异地</td></tr>
+        <tr><td>真实薪资</td><td>面试 3–5 家，问底薪/补贴/加班/社保</td><td>决定现金流是否够、是否值得去</td></tr>
+        <tr><td>岗位性质</td><td>面试时问：出差比例、参与调试吗、驻场吗</td><td>决定是“技术岗”还是“装配工”</td></tr>
+        <tr><td>培训报价</td><td>问 2–3 家，是否真机/实操/就业数据</td><td>决定是否值得付费，还是自学</td></tr>
+        <tr><td>身体条件</td><td>现场跟班后自评：腰、颈椎、体力、能否登高</td><td>决定能否长期现场/倒班</td></tr>
+        <tr><td>家庭安排</td><td>和家人谈出差、驻场、倒班、前两年降薪</td><td>决定能否选 C1/A1</td></tr>
+        <tr><td>低压电工证</td><td>查本地应急管理部门指定机构，问周期/费用</td><td>决定上车时间</td></tr>
+        <tr><td>板级维修入口</td><td>问 3–5 家维修店/服务商：带不带学徒、怎么带</td><td>决定 B 线是否现在能启动</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:30px">决策门：到时间用反馈做决定</h3>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="wk">第 3 个月 · 第一个决策门</div>
+      <h4>有没有面试、有没有人愿意带？</h4>
+      <p>有面试就继续加码；没有，就换变量——换渠道（平台→上门）、换岗位（调试→装配/维护）、换地点（市区→郊区/河北/长三角珠三角）。继续用同样的方法投同样的岗位，只会得到同样的结果。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">6 个月</div>
+      <h4>有没有上岗、摸到真机？</h4>
+      <p>没有就换入口：从集成商换到厂内维护，从海投换到上门，从“等回复”换到“直接去工厂门口问”。不要一直等“合适的岗位”。</p>
+    </div>
+    <div class="tl-item">
+      <div class="wk">12 个月</div>
+      <h4>能不能独立处理常见故障、参与调试？</h4>
+      <p>如果还在纯接线，换岗；如果已经参与调试，继续往机器人靠。把“会什么”写成清单，不要凭感觉。</p>
+    </div>
+    <div class="tl-item alt">
+      <div class="wk">24 个月</div>
+      <h4>有没有接触机器人？</h4>
+      <p>没有就跳槽到有机器人业务的岗位；有就选 A1/A2/A3，或者回到 B 做长期专精。不要用“稳定”骗自己。</p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
+    <strong>决策门不是“到时间自动转行”，是“到时间用真实反馈做决定”。</strong>有面试、有人带、有真机可摸，就加码；三个月没有任何反馈，说明变量选错了（渠道、地点、岗位类型、薪资预期），先改变量，再谈坚持。
+  </div>
+</section>
+
+<section id="note">
+  <div class="section-head"><span class="section-num">13</span><h2>说明与来源</h2></div>
+  <p class="sub">这份文档是 2026-10 的调研整理，不是职业承诺。下面说明口径、边界和下一步。</p>
+
+  <div class="grid g2">
+    <div class="card">
+      <span class="tag tag-gray">口径</span>
+      <h3>收入、周期、费用</h3>
+      <p>收入为税前月薪综合估计（北京/一线），含出差补贴/加班，波动很大；请以实际面试为准。证书周期/费用以当地机构实际报价为准。学习周期是“能上岗/能独立”的估计，因人而异。</p>
+      <p>本文基于公开招聘信息、行业从业者口径、培训/证书公开信息整理；不是职业承诺，也不构成投资建议。</p>
+    </div>
+    <div class="card">
+      <span class="tag tag-gray">边界</span>
+      <h3>没有验证的，不要当确定</h3>
+      <p>当地岗位量、真实薪资、岗位性质、培训报价、身体条件、家庭安排都还没验证（见第 12 节）。拍板前，至少完成“现场跟班 2–3 天＋面试 3–5 家＋问 2–3 家培训”。</p>
+      <p>本文不包含只靠客户关系、开店投入或长期艺术训练的方向；这些方向在其他报告里另算。</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:30px">下一步：今天就能做的 3 件事</h3>
+  <div class="final-actions">
+    <div class="final-action">
+      <div class="n">01 · 今天</div>
+      <h4>列一张本地企业名单</h4>
+      <p>搜本地区县的集成商、经销商、维修店、工厂，列出 20–30 家，标出地址和电话。</p>
+    </div>
+    <div class="final-action">
+      <div class="n">02 · 本周</div>
+      <h4>查低压电工证 + 列练习台</h4>
+      <p>问当地指定机构周期/费用；列一张 2000–4000 元的练习台清单，先不买贵设备。</p>
+    </div>
+    <div class="final-action">
+      <div class="n">03 · 本月</div>
+      <h4>跑 3 家现场</h4>
+      <p>上门或电话问“带不带学徒、招不招助理”；用第 7 节的 10 个问题问清楚，再决定往哪条线走。</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:22px">
+    <strong>最后一句：</strong>工业自动化不是“逃离代码”的浪漫故事，它是另一门手艺：要证、要手、要现场、要熬。它的好处是经验会积累、手艺会变值钱、不需要靠客户关系吃饭；代价是收入前低后高、体力消耗大、出差多。<b>先上车，再谈喜不喜欢；先摸到真机，再谈转不转机器人。</b>
+  </div>
+
+  <p class="small-note" style="margin-top:18px">来源说明：公开招聘平台（BOSS 直聘/智联/58）、行业从业者交流、培训/证书公开信息、西门子/三菱/ABB/FANUC 官方文档。具体链接略（避免过期/广告）。涉及电气作业请遵守安全规程，持证上岗。</p>
+</section>
+
+</main>
+
+<footer>
+  <p>非计算机方向转行调研（工业自动化 · PLC / 板级维修 / 工业机器人） · 公开版 · 客观调研 · 2026-10</p>
+  <p>本文不构成职业/投资建议；收入与周期为综合估计，请以实际面试和当地机构报价为准。</p>
+</footer>
+
+</body>
+</html>
